@@ -1,0 +1,122 @@
+* {
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+}
+
+body {
+    position: relative;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: red;
+}
+
+a:active {
+    color: lightcoral;
+}
+
+a:visited {
+    color: darkred;
+}
+
+a.btn-person-font {
+    font-size: 20px;
+}
+
+.main-home {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100vh;
+    padding: 0;
+    background: #ebebeb;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 85%, 50% 100%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 85%, 50% 100%, 0 100%);
+}
+
+.main-header {
+    margin-left: 0;
+    margin-right: 0;
+    height: 20%;
+}
+
+.btn-person {
+    position: relative;
+    background-color: white;    
+    border-radius: 5px;
+    height: 10%;
+    margin-bottom: 4px;
+    font-size: 20px;
+}
+
+img.btn-icon {
+    position: absolute;
+    left: 30px;
+    top: 19px;
+}
+
+.btn-mentor {
+    position: relative;
+    background-color: blueviolet;
+    text-align: center;
+    margin-top: 2px;
+    margin-bottom: 4px;
+}
+
+.btn-person a {
+    position: absolute;
+    left: 75px;
+    top: 20px;
+    margin-top: auto;
+}
+
+.btn-home {
+    padding: 5px;
+    position: absolute;
+    border: 1px solid black;
+    bottom: 35px;
+    left: 57px;
+}
+
+.btn-home-msg {
+    padding: 5px;
+    position: absolute;
+    border: 1px solid black;
+    bottom: 35px;
+    right: 48px;
+}
+
+button {
+    background-color: blue;
+}
+
+button.btn-settings {
+    position: absolute;
+    z-index: 10;
+    right: 15px;
+    top: 15px;
+    height: 20px;
+    width: 20px;
+}
+
+button.btn-account {
+    position: absolute;
+    z-index: 10;
+    left: 15px;
+    top: 15px;
+    height: 20px;
+    width: 20px;
+}
+
+.logo {
+    position: absolute;
+    top: 20px;
+    left: 40%;
+    padding: 10px;
+    z-index: 10;
+    border: 1px solid black;
+}
