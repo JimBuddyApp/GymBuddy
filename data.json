@@ -1,0 +1,34 @@
+{
+    "users": [
+        {
+            "name": "Scott Klemmer",
+            "description": "HCI Prof",
+            "imageURL": "images/svg/basic_eye.svg"
+        },
+        {
+            "name": "Barack Obama",
+            "description": "President guy",
+            "imageURL": "images/svg/basic_eye.svg"
+        },
+        {
+            "name": "Michael Jordan",
+            "description": "Basketball star",
+            "imageURL": "images/svg/basic_eye.svg"
+        },
+        {
+            "name": "Austin Roddick",
+            "description": "HCI student",
+            "imageURL": "images/svg/basic_eye.svg"
+        },
+        {
+            "name": "Sam Baik",
+            "description": "HCI student",
+            "imageURL": "images/svg/basic_eye.svg"
+        },
+        {
+            "name": "John Smith",
+            "description": "generic name",
+            "imageURL": "images/svg/basic_eye.svg"
+        }
+    ]
+}
