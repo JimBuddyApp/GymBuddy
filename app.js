@@ -1,18 +1,45 @@
-var PORT = 3000;
+/**
+ * Module dependencies.
+ */
+var express = require('express');
+var http = require('http');
+var path = require('path');
+var handlebars = require('express-handlebars');
+var methodOverride = require('method-override');
+var session = require('express-session');
+var errorHandler = require('errorhandler');
 
-const express = require('express')
-const app = express();
+// Require routes here
+var index = require('../COGS120-gymbuddy/public/routes/index');
+
+var app = express();
+
+// All environments
+app.set('port', process.env.PORT || 3000);
+app.set('views', path.join(__dirname, 'views'));
+app.engine('handlebars', handlebars());
+app.set('view engine', 'handlebars');
+app.use(express.json());
+app.use(methodOverride('X-HTTP-Method-Override'));
+app.use(session({
+    secret: 'keyboard cat',
+    resave: false,
+    saveUninitialized: true,
+    cookie: { secure: true }
+}));
 
 
+if ('development' == app.get('env')) {
+    app.use(errorHandler());
+}
 
-
-// Return all pages in the /static directory
-// whenever they are requested at '/'
-// e.g., http://localhost:3000/index.html
-// maps to /static/index.html on this machine
-app.use(express.static(__dirname + '/static'));
-// Start the server
-var port = process.env.PORT || PORT; // 80 for web, 3000 for development
-app.listen(port, function() {
-	console.log("Node.js server running on port %s", port);
+// Add routes here
+app.get('/', (req, res) => {
+    res.render('index');
 });
+
+
+app.use(express.static(path.join(__dirname, 'public')));
+http.createServer(app).listen(app.get('port'), function(){
+    console.log('Express server listening on port ' + app.get('port'));
+})
