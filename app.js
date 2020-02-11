@@ -10,7 +10,7 @@ var session = require('express-session');
 var errorHandler = require('errorhandler');
 
 // Require routes here
-var index = require('../COGS120-gymbuddy/public/routes/index');
+var index = require('./routes/index');
 
 var app = express();
 

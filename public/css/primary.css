@@ -53,11 +53,11 @@ a.btn-person-font {
 .main-scroll {
     height: 61vh;
     border: 1px solid black;
+    overflow-y: scroll;
 }
 
 .btn-person {
     position: relative;
-    overflow-y: scroll;
     background-color: white;    
     border-radius: 10px;
     width: 95%;
