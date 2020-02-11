@@ -4,53 +4,47 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
         <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
-        <link rel="stylesheet" href="css/primary.css">
+        <link rel="stylesheet" href="public/css/primary.css">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+        <script src="js/jquery-1.11.0.js"></script>
+	    <script src="js/bootstrap.js"></script>
+        <script src="js/homepage.js"></script>
     </head>
     <body>
-        <button type="button" class="btn-settings" onclick="window.location.href='account.html'">
-
-        </button>
-        <button type="button" class="btn-account" onclick="window.location.href='settings.html'">
-
-        </button>
-        <div class="logo">
-            LOGO
-        </div>
         <div class="main-home">
             <div class="main-header">
+                <button type="button" class="btn-settings" onclick="window.location.href='public/html/settings.html'">
+    
+                </button>
+                <div class="logo">
+                    LOGO
+                </div>
+                <button type="button" class="btn-account" onclick="window.location.href='public/html/account.html'">
+        
+                </button>
+            </div>
+            <div class="main-scroll">
+                <div class="btn-mentor btn-person">
+                    <img class="btn-icon" src="public/images/svg/basic_eye.svg" height="30">
+                    <a href="public/html/mentors.html" class="btn-person-font">Find a Mentor</a>
+                </div>
+
+                {{#each users}}
+                <div class="btn-person">
+                    <img class="btn-icon" src={{imageURL}} height="30">
+                    <a href="public/html/account.html" class="btn-person-font">{{name}}</a>
+                </div>
+                {{/each}}
 
             </div>
-            <div class="btn-mentor btn-person">
-                <img class="btn-icon" src="images/svg/basic_eye.svg" height="30">
-                <a href="mentors.html" class="btn-person-font">Find a Mentor</a>
+            <div class="tab">
+                <div class="btn-tab btn-home">
+                    <a href="#">Home</a>
+                </div>
+                <div class="btn-tab btn-msg">
+                    <a href="public/html/main2.html">Messages</a>
+                </div>
             </div>
-            <div class="btn-person">
-                <img class="btn-icon" src="images/svg/basic_eye.svg" height="30">
-                <a href="account.html" class="btn-person-font">Scott Klemmer</a>
-            </div>
-            <div class="btn-person">
-                <img class="btn-icon" src="images/svg/basic_eye.svg" height="30">
-                <a href="account.html" class="btn-person-font">Barack Obama</a>
-            </div>
-            <div class="btn-person">
-                <img class="btn-icon" src="images/svg/basic_eye.svg" height="30">
-                <a href="account.html" class="btn-person-font">Michael Jordan</a>
-            </div>
-            <div class="btn-person">
-                <img class="btn-icon" src="images/svg/basic_eye.svg" height="30">
-                <a href="account.html" class="btn-person-font">Gary Gillespie</a>
-            </div>
-            <div class="btn-person">
-                <img class="btn-icon" src="images/svg/basic_eye.svg" height="30">
-                <a href="account.html" class="btn-person-font">John Smith</a>
-            </div>
-            <div class="btn-home">
-                <a href="#">Home</a>
-            </div>
-        </div>
-        <div class="btn-home-msg">
-            <a href="main2.html">Messages</a>
         </div>
     </body>
     
