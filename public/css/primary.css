@@ -57,7 +57,9 @@ a.btn-person-font {
 }
 
 .btn-person {
-    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     background-color: white;    
     border-radius: 10px;
     width: 95%;
@@ -69,24 +71,13 @@ a.btn-person-font {
 }
 
 img.btn-icon {
-    position: absolute;
-    left: 30px;
-    top: 19px;
+    margin-left: 10px;
 }
 
 .btn-mentor {
-    position: relative;
     background-color: #C69214;
-    text-align: center;
     margin-top: 2px;
-    margin-bottom: 4px;
-}
-
-.btn-person a {
-    position: absolute;
-    left: 75px;
-    top: 20px;
-    margin-top: auto;
+    margin-bottom: 6px;
 }
 
 .btn-settings {
@@ -96,9 +87,13 @@ img.btn-icon {
 }
 
 .btn-account {
+    display: flex;
     align-self: flex-start;
     height: 20px;
     width: 10px;
+}
+
+.btn-person a {
 }
 
 .tab {
