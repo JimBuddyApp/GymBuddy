@@ -11,6 +11,7 @@ var errorHandler = require('errorhandler');
 
 // Require routes here
 var index = require('./routes/index');
+var main = require('./routes/accounts');
 
 var app = express();
 
@@ -34,9 +35,7 @@ if ('development' == app.get('env')) {
 }
 
 // Add routes here
-app.get('/', (req, res) => {
-    res.render('index');
-});
+app.get('/', index.view);
 
 
 app.use(express.static(path.join(__dirname, 'public')));
