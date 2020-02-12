@@ -21,7 +21,7 @@ a:active {
 }
 
 a:visited {
-    color: darkred;
+    color: black;
 }
 
 a.btn-person-font {
@@ -61,13 +61,13 @@ a.btn-person-font {
     flex-direction: row;
     align-items: center;
     background-color: white;    
-    border-radius: 10px;
-    width: 95%;
+    width: 100%;
     height: 60px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 6px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
     font-size: 20px;
+    border-bottom: 1px solid gray;
 }
 
 img.btn-icon {
@@ -77,7 +77,7 @@ img.btn-icon {
 .btn-mentor {
     background-color: #C69214;
     margin-top: 2px;
-    margin-bottom: 6px;
+    margin-bottom: 0;
 }
 
 .btn-settings {
