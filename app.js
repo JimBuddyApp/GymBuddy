@@ -16,9 +16,12 @@ var app = express();
 
 // All environments
 app.set('port', process.env.PORT || 3000);
+
+// View engine
 app.set('views', path.join(__dirname, 'views'));
-app.engine('handlebars', handlebars());
+app.engine('handlebars', handlebars({defaultLayout: 'main'}));
 app.set('view engine', 'handlebars');
+
 app.use(express.json());
 app.use(methodOverride('X-HTTP-Method-Override'));
 app.use(session({
