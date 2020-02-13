@@ -54,7 +54,7 @@ a.btn-person-font {
 .main-scroll {
     height: 61vh;
     overflow-y: scroll;
-    background-color: #B6B1A9;
+    background-color: white;
 }
 
 .btn-person {
