@@ -1,3 +1,3 @@
 exports.view = function(request, response){
-    response.render('login');
+    response.render('login', {layout: 'loginset.handlebars'});
 }
