@@ -112,7 +112,7 @@ svg.icon-forward {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    height: 15vh;
+    height: 12vh;
     box-shadow: 0 -1px 20px 0px gray;
 }
 
