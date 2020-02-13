@@ -39,6 +39,21 @@
             "name": "Beyonce",
             "description": "Good Singer",
             "imageURL": "images/svg/basic_eye.svg"
+        },
+        {
+            "name": "Beyonce",
+            "description": "Good Singer",
+            "imageURL": "images/svg/basic_eye.svg"
+        },
+        {
+            "name": "Beyonce",
+            "description": "Good Singer",
+            "imageURL": "images/svg/basic_eye.svg"
+        },
+        {
+            "name": "Beyonce",
+            "description": "Good Singer",
+            "imageURL": "images/svg/basic_eye.svg"
         }
     ]
 }

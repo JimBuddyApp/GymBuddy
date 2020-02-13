@@ -10,6 +10,7 @@ var session = require('express-session');
 var errorHandler = require('errorhandler');
 
 // Require routes here
+var login = require('./routes/login');
 var index = require('./routes/index');
 var friends = require('./routes/friends');
 var settings = require('./routes/settings');
@@ -40,7 +41,8 @@ if ('development' == app.get('env')) {
 }
 
 // Add routes here
-app.get('/', index.view);
+app.get('/', login.view);
+app.get('/main', index.view);
 app.get('/friends', friends.view);
 app.get('/settings', settings.view);
 app.get('/profile', profile.view);

@@ -76,14 +76,15 @@ a.btn-person-font {
 }
 
 .main-scroll {
-    flex-grow: auto;
     overflow-y: scroll;
     background-color: white;
     margin-bottom: auto;
+    flex-shrink: 100;
 }
 
 nav {
     background-color: var(--color-primary);
+    height: 70px;
 }
 
 nav:hover {
@@ -138,7 +139,6 @@ svg.icon-forward {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    height: 12vh;
     box-shadow: 0 -1px 20px 0px gray;
 }
 

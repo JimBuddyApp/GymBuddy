@@ -1,44 +1,21 @@
-<div class='wrapper viewport-height'>
-    <div class="main-home">
-        <img class="logo" src='/images/temporary-logo.png'>
+<div class="main-scroll">
+    <div class="btn-mentor btn-person">
+        <a href="public/html/mentors.html" class="header-font header-font-mentor">Find a Mentor</a>
+        <svg id="i-chevron-right" class="icon-forward" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="20" height="20" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+            <path d="M12 30 L24 16 12 2" />
+        </svg>
     </div>
-    <div class="main-scroll">
-        <div class="btn-mentor btn-person">
-            <a href="public/html/mentors.html" class="header-font header-font-mentor">Find a Mentor</a>
-            <svg id="i-chevron-right" class="icon-forward" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="20" height="20" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-                <path d="M12 30 L24 16 12 2" />
-            </svg>
-        </div>
 
-        {{#each users}}
-        <div class="btn-person btn-person-click">
-            <svg id="i-user" class="icon-user" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="20" height="20" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-                <path d="M22 11 C22 16 19 20 16 20 13 20 10 16 10 11 10 6 12 3 16 3 20 3 22 6 22 11 Z M4 30 L28 30 C28 21 22 20 16 20 10 20 4 21 4 30 Z" />
-            </svg>
-            <a href="public/html/account.html" class="btn-person-font">{{name}}</a>
-            <svg id="i-chevron-right" class="icon-forward" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="20" height="20" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-                <path d="M12 30 L24 16 12 2" />
-            </svg>
-        </div>
-        {{/each}}
-
+    {{#each users}}
+    <div class="btn-person btn-person-click">
+        <svg id="i-user" class="icon-user" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="20" height="20" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+            <path d="M22 11 C22 16 19 20 16 20 13 20 10 16 10 11 10 6 12 3 16 3 20 3 22 6 22 11 Z M4 30 L28 30 C28 21 22 20 16 20 10 20 4 21 4 30 Z" />
+        </svg>
+        <a href="public/html/account.html" class="btn-person-font">{{name}}</a>
+        <svg id="i-chevron-right" class="icon-forward" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="20" height="20" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+            <path d="M12 30 L24 16 12 2" />
+        </svg>
     </div>
-    <nav class="tab navbar fixed-bottom navbar-light bg-light">
-        <svg id="i-home" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="#FFCD00" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" onclick="window.location.href='/'">
-        <path d="M12 20 L12 30 4 30 4 12 16 2 28 12 28 30 20 30 20 20 Z" />
-        </svg>
+    {{/each}}
 
-        <svg id="i-msg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="#FFCD00" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" onclick="window.location.href='/friends'">
-        <path d="M2 4 L30 4 30 22 16 22 8 29 8 22 2 22 Z" />
-        </svg>
-
-        <svg id="i-user" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="#FFCD00" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" onclick="window.location.href='/profile'">
-        <path d="M22 11 C22 16 19 20 16 20 13 20 10 16 10 11 10 6 12 3 16 3 20 3 22 6 22 11 Z M4 30 L28 30 C28 21 22 20 16 20 10 20 4 21 4 30 Z" />
-        </svg>
-
-        <svg id="i-settings" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="#FFCD00" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" onclick="window.location.href='/settings'">
-        <path d="M13 2 L13 6 11 7 8 4 4 8 7 11 6 13 2 13 2 19 6 19 7 21 4 24 8 28 11 25 13 26 13 30 19 30 19 26 21 25 24 28 28 24 25 21 26 19 30 19 30 13 26 13 25 11 28 8 24 4 21 7 19 6 19 2 Z" />
-        <circle cx="16" cy="16" r="4" />
-        </svg>
-    </nav>
 </div>

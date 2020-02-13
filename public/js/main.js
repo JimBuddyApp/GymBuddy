@@ -24,11 +24,11 @@ function personClick(e) {
 }
 
 function navFill() {
-	if (window.location.pathname=='/') {
+	if (window.location.pathname=='/main') {
 		$('#i-home').css("fill", "#FFCD00");
 	} else if (window.location.pathname=='/friends') {
 		$('#i-msg').css("fill", "#FFCD00");
-	} else if (window.location.pathname=='/accounts') {
+	} else if (window.location.pathname=='/profile') {
 		$('#i-user').css("fill", "#FFCD00");
 	} else if (window.location.pathname=='/settings') {
 		$('#i-settings').css("fill", "#FFCD00");
