@@ -11,7 +11,6 @@ var errorHandler = require('errorhandler');
 
 // Require routes here
 var index = require('./routes/index');
-var main = require('./routes/accounts');
 
 var app = express();
 
