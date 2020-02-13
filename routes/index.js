@@ -1,7 +1,7 @@
 // Retrieve account data
-var data = require('../data.json');
+var buddies = require('../buddies.json');
 
 exports.view = function(request, response){
-    console.log(data);
-    response.render('index', data);
+    console.log(buddies);
+    response.render('index', buddies);
 }
