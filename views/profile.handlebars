@@ -1,13 +1,24 @@
-<div class='wrapper viewport-height'>
+<div class='wrapper'>
     <div class="main-home">
         <img class="logo" src='/images/temporary-logo.png'>
     </div>
     <div class="main-scroll">
-        <div class="btn-person header-settings">
-            <p class="header-font">
-                Settings
-            </p>
+        <div class="profile-header">
+            <a href="index.html" class="profile-header-font">Back</a>
+            <span id='profile-text'><h2>My Profile</h2></span>
         </div>
+
+        {{#each profile}}
+        <div class="btn-person">
+            <svg id="i-user" class="icon-user" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="20" height="20" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                <path d="M22 11 C22 16 19 20 16 20 13 20 10 16 10 11 10 6 12 3 16 3 20 3 22 6 22 11 Z M4 30 L28 30 C28 21 22 20 16 20 10 20 4 21 4 30 Z" />
+            </svg>
+            <a href="public/html/account.html" class="btn-person-font">{{name}}</a>
+            <svg id="i-chevron-right" class="icon-forward" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="20" height="20" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                <path d="M12 30 L24 16 12 2" />
+            </svg>
+        </div>
+        {{/each}}
 
     </div>
     <nav class="tab navbar fixed-bottom navbar-light bg-light">
