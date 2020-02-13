@@ -10,4 +10,11 @@ $(document).ready(function() {
  */
 function initializePage() {
 	console.log("Javascript connected!");
+
+	$(".btn-person-click").click(personClick);
+}
+
+function personClick(e) {
+	e.preventDefault();
+	$(this).css("background-color", "#e8e8e8");
 }
