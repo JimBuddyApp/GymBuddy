@@ -13,6 +13,7 @@ var errorHandler = require('errorhandler');
 var index = require('./routes/index');
 var friends = require('./routes/friends');
 var settings = require('./routes/settings');
+var profile = require('./routes/profile');
 
 var app = express();
 
@@ -42,7 +43,7 @@ if ('development' == app.get('env')) {
 app.get('/', index.view);
 app.get('/friends', friends.view);
 app.get('/settings', settings.view);
-
+app.get('/profile', profile.view);
 
 app.use(express.static(path.join(__dirname, 'public')));
 http.createServer(app).listen(app.get('port'), function(){
