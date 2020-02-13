@@ -11,6 +11,7 @@ var errorHandler = require('errorhandler');
 
 // Require routes here
 var index = require('./routes/index');
+var friends = require('./routes/friends');
 
 var app = express();
 
@@ -38,6 +39,7 @@ if ('development' == app.get('env')) {
 
 // Add routes here
 app.get('/', index.view);
+app.get('/friends', friends.view);
 
 
 app.use(express.static(path.join(__dirname, 'public')));

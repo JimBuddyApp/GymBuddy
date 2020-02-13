@@ -1,0 +1,9 @@
+{
+    "friends": [
+        {
+            "name": "Scott Klemmer",
+            "description": "HCI Prof",
+            "imageURL": "images/svg/basic_eye.svg"
+        }
+    ]
+}
