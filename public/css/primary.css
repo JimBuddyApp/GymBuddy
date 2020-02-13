@@ -218,6 +218,10 @@ button {
     background-color: #FC8900;
 }
 
+.header-settings {
+    background-color: #6E963B;
+}
+
 .header-font {
     margin-left: 20px;
     text-transform: uppercase;
