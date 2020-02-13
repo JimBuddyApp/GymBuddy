@@ -4,6 +4,9 @@
 $(document).ready(function() {
 	initializePage();
 	navFill();
+	// Get height of viewport inner window and set CSS variable --vh
+	let vh = window.innerHeight * 0.01;
+	document.documentElement.style.setProperty('--vh', `${vh}px`);
 })
 
 /*
