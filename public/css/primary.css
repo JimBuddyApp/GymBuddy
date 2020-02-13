@@ -17,7 +17,7 @@ a {
 }
 
 a:hover {
-    color: red;
+    color: rgb(112, 112, 112);
 }
 
 a:active {
@@ -134,17 +134,17 @@ button {
 
 .container {
     width: 100%;
-    color: white;
+    color: black;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    background-color: #182B49;
+    background-color: white;
 }
 
 .btn-changephoto-font {
-    color: white;
+    color: black;
     justify-content: center;
     display: flex;
 }
@@ -156,9 +156,15 @@ button {
     border: 2px solid #FFCD00;
 }
 
+.profile-header
+{
+    color: white;
+    background-color: #182B49;
+}
+
 .profile-workout {
     align-items: center;
-    padding: 10px;
+    padding: 25px;
     border-radius: 40px;
     border: 2px solid #FFCD00;
 }
@@ -182,6 +188,27 @@ button {
     display: flex;
 }
 
+.profile-workout input[type="radio"]
+{
+    display: none;
+}
+
+.profile-workout label
+{
+    display: inline-block;
+    border-radius: 40px;
+    border: 1px solid #FFCD00;
+    padding: 4px 11px;
+    font-family: Arial;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.profile-workout input[type="radio"]:checked+label
+{
+    background-color: #bbb;
+}
+
 .logo {
     width: 50px;
     height: 50px;
@@ -202,3 +229,68 @@ button {
 a.header-font-mentor {
     color: white;
 }
+
+
+/*Toggle Switch Section*/ 
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }

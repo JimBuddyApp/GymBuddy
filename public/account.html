@@ -9,36 +9,45 @@
     </head>
     <body>
         <div class='container'>
-        <div class="profile-home">
-            <div class="btn-back">
-                <a href="index.html" class="btn-back-font">Back</a>
-            </div>
-            <span id='profile-text'><h2>My Profile</h2></span>
-            <div class='profile-photo'>
-                <img src="images/1wi3t0TU_400x400.jpg" width="150"; height:="150">
-            </div>
-            <div class="btn-changephoto">
-                <a href="images/mentors.html" class="btn-changephoto-font">Change Profile Photo</a>
-            </div>
-            <br>
-            <div class='profile-switch'>
-                Discoverable as a Mentor
-                <input id="cb" type="checkbox">
-                <span class="slider round"></span>
-            </div>
+            <div class="profile-home">
+                <div class="profile-header">
+                    <a href="index.html" class="profile-header-font">Back</a>
+                    <span id='profile-text'><h2>My Profile</h2></span>
+                 </div>
+                
+                <div class='profile-photo'>
+                    <img src="images/1wi3t0TU_400x400.jpg" width="150"; height:="150">
+                 </div>
+                <div class="btn-changephoto">
+                    <a href="images/mentors.html" class="btn-changephoto-font">Change Profile Photo</a>
+                 </div>
+                <br>
+                <div class='profile-switch'>
+                    Discoverable as a Mentor
+                      <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider round"></span>
+                      </label>
+                 </div>
                 <br>
                 <div class='profile-name'>
-                Name: John Smith
-                </div>
+                    Name: John Smith
+                 </div>
                 <br>
                 <div class='profile-workout'>
                     Main Type of Workout:
                     <br>
-                    <input type="radio" name="type" value="weight"> Weight<br>
-                    <input type="radio" name="type" value="flexibility"> Flexibility<br>    
-                    <input type="radio" name="type" value="cardio"> Cardio
-                </div>
-        </div>
+                    <input type="radio" id="radio1" name="type" value="weight">
+                    <label for="radio1">Weight</label>
+
+                    <input type="radio" id="radio2" name="type" value="flexibility">
+                    <label for="radio2">Flexibility</label>
+
+                    <input type="radio" id="radio3" name="type" value="cardio">
+                    <label for="radio3">Cardio</label>
+                    </div>
+                
+             </div>
         </div>
     </body>
 
