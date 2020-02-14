@@ -1,5 +1,6 @@
 var data = require("../friends.json")
 
+
 exports.addFriend = function(request, response)
 {   
 	var newName = "John Smith";
@@ -12,4 +13,5 @@ exports.addFriend = function(request, response)
 	};
 	console.log(newFriend);
 	data.friends.push(newFriend);
+	response.redirect('/friends');
 }
