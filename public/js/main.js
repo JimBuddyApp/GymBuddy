@@ -22,6 +22,7 @@ function initializePage() {
 function personClick(e) {
 	e.preventDefault();
 	$(this).css("background-color", "#e8e8e8");
+	window.location ='/accounts'
 }
 
 function navFill() {
