@@ -12,8 +12,10 @@ var errorHandler = require('errorhandler');
 // Require routes here
 var login = require('./routes/login');
 var index = require('./routes/index');
+var mentors = require('./routes/mentors');
 var friends = require('./routes/friends');
 var profile = require('./routes/profile');
+var accounts = require('./routes/accounts');
 var settings = require('./routes/settings');
 
 var app = express();
@@ -43,8 +45,10 @@ if ('development' == app.get('env')) {
 // Add routes here
 app.get('/', login.view);
 app.get('/main', index.view);
+app.get('/mentors', mentors.view);
 app.get('/friends', friends.view);
 app.get('/profile', profile.view);
+app.get('/accounts', accounts.view);
 app.get('/settings', settings.view);
 
 app.use(express.static(path.join(__dirname, 'public')));

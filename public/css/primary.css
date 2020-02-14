@@ -4,6 +4,7 @@
     --color-secondary: #FFCD00;
     --color-tertiary: #FC8900;
     --color-quaternary: #6E963B;
+    --color-quinary: #00C6D7;
 
     --color-font: #000;
     --color-btn-person: #fff;
@@ -80,6 +81,10 @@ a.btn-person-font {
     background-color: white;
     margin-bottom: auto;
     flex-shrink: 100;
+}
+
+.main-mentors {
+    background-color: var(--color-secondary);
 }
 
 nav {
@@ -200,6 +205,7 @@ svg.icon-forward {
     justify-content: center;
     align-items: center;
     display: flex;
+    margin-top: 20px;
 }
 
 .profile-workout input[type="radio"]
@@ -231,6 +237,10 @@ svg.icon-forward {
 /* Page Titles */
 .header-friends {
     background-color: var(--color-tertiary);
+}
+
+.header-profile {
+    background-color: var(--color-quinary);
 }
 
 .header-settings {

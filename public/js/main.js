@@ -25,7 +25,7 @@ function personClick(e) {
 }
 
 function navFill() {
-	if (window.location.pathname=='/main') {
+	if (window.location.pathname=='/main' || window.location.pathname=='/mentors') {
 		$('#i-home').css("fill", "#FFCD00");
 	} else if (window.location.pathname=='/friends') {
 		$('#i-msg').css("fill", "#FFCD00");
@@ -33,5 +33,7 @@ function navFill() {
 		$('#i-user').css("fill", "#FFCD00");
 	} else if (window.location.pathname=='/settings') {
 		$('#i-settings').css("fill", "#FFCD00");
+	} else if (window.location.pathname=='/accounts') {
+		$('#i-user').css("fill", "#FFCD00");
 	}
 }
