@@ -170,9 +170,20 @@ svg.icon-forward {
 
 .profile-name {
     align-items: center;
-    padding: 5px;
+    padding: 25px;
     border-radius: 40px;
     border: 2px solid var(--color-secondary);
+}
+
+.add-friend-btn
+{
+    justify-content: center;
+    display: flex;
+    padding: 25px;
+    background-color: var(--color-primary);
+    color: white;
+    border-radius: 40px;
+    
 }
 
 .profile-header
@@ -190,7 +201,7 @@ svg.icon-forward {
 
 .profile-switch {
     align-items: center;
-    padding: 5px;
+    padding: 25px;
     border-radius: 40px;
     border: 2px solid var(--color-secondary);
 }
@@ -302,11 +313,11 @@ a.header-font-mentor {
   }
   
   input:checked + .slider {
-    background-color: #2196F3;
+    background-color: var(--color-primary);
   }
   
   input:focus + .slider {
-    box-shadow: 0 0 1px #2196F3;
+    box-shadow: 0 0 1px var(--color-primary);
   }
   
   input:checked + .slider:before {
