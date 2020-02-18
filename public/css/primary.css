@@ -14,6 +14,8 @@
     --color-gray-light: #e8e8e8;
 }
 
+/* Animations */
+
 * {
     font-family: 'Open Sans', Helvetica, Arial, sans-serif;
 }
@@ -42,6 +44,7 @@ a {
 
 a:hover {
     color: rgb(112, 112, 112);
+    cursor: pointer;
 }
 
 a:active {
@@ -86,6 +89,10 @@ a.btn-person-font {
 
 .main-mentors {
     background-color: var(--color-secondary);
+    color: var(--color-font-light);
+    text-align: center;
+    text-shadow: 1px 1px 1px black;
+    height: 100%;
 }
 
 nav {
@@ -120,7 +127,7 @@ nav:hover {
     height: 30px;
     width: 30px;
     position: absolute;
-    bottom: 90px;
+    bottom: 25px;
     right: 25px;
     box-shadow: 1px 1px 5px 0px gray;
 }
@@ -128,6 +135,27 @@ nav:hover {
 .btn-mentor-icon {
     margin: 0 auto;
     display: block;
+}
+
+.btn-mentor-animate {
+    animation-name: search-expand;
+    animation-duration: 2s;
+}
+
+.btn-mentor-pair {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: var(--color-quinary);
+    box-shadow: 2px 2px 6px 0px gray;
+}
+
+a.btn-mentor-pair-text {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-shadow: none;
+    text-decoration: none;
+    color: white;
 }
 
 svg.icon-user {

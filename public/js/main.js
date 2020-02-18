@@ -17,7 +17,8 @@ function initializePage() {
 	console.log("Javascript connected!");
 
 	$(".btn-person-click").click(personClick);
-	$(".btn-search-click").click(searchClick);
+	$(".btn-search-click").click(mentorClick);
+	$('.btn-mentor-click').click(mentorAnimate);
 }
 
 function personClick(e) {
@@ -26,9 +27,21 @@ function personClick(e) {
 	window.location = '/accounts';
 }
 
-function searchClick(e) {
+function mentorClick(e) {
 	e.preventDefault();
 	window.location = '/search';
+}
+
+function mentorAnimate() {
+	$(".btn-mentor").animate({
+		borderRadius: '0px',
+		bottom: '0px',
+		right: '0px',
+		height: '100%', 
+		width: '100%',
+
+
+	});
 }
 
 function navFill() {
