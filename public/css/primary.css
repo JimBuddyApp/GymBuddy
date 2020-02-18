@@ -120,12 +120,6 @@ svg.icon-forward {
     margin-right: 25px;
 }
 
-.btn-mentor {
-    background-color: var(--color-secondary);
-    margin-top: 0;
-    margin-bottom: 0;
-}
-
 .btn-settings {
     align-self: flex-start;
     height: 20px;
@@ -246,6 +240,10 @@ svg.icon-forward {
 }
 
 /* Page Titles */
+.header-mentor {
+    background-color: var(--color-secondary);
+}
+
 .header-friends {
     background-color: var(--color-tertiary);
 }
