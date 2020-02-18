@@ -12,7 +12,7 @@ var errorHandler = require('errorhandler');
 // Require routes here
 var login = require('./routes/login');
 var index = require('./routes/index');
-var mentors = require('./routes/mentors');
+var search = require('./routes/search');
 var friends = require('./routes/friends');
 var addfriend = require('./routes/addfriend');
 var profile = require('./routes/profile');
@@ -46,7 +46,7 @@ if ('development' == app.get('env')) {
 // Add routes here
 app.get('/', login.view);
 app.get('/main', index.view);
-app.get('/mentors', mentors.view);
+app.get('/search', search.view);
 app.get('/friends', friends.view);
 app.get('/addfriend', addfriend.addFriend);
 app.get('/profile', profile.view);

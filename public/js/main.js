@@ -17,12 +17,18 @@ function initializePage() {
 	console.log("Javascript connected!");
 
 	$(".btn-person-click").click(personClick);
+	$(".btn-search-click").click(searchClick);
 }
 
 function personClick(e) {
 	e.preventDefault();
 	$(this).css("background-color", "#e8e8e8");
-	window.location ='/accounts'
+	window.location = '/accounts';
+}
+
+function searchClick(e) {
+	e.preventDefault();
+	window.location = '/search';
 }
 
 function navFill() {

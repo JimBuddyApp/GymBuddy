@@ -1,3 +1,3 @@
 exports.view = function(request, response){
-    response.render('mentors');
+    response.render('search');
 }
