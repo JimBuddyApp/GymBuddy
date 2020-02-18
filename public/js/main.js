@@ -58,8 +58,8 @@ function mentorClose() {
 	$(".btn-mentor-secondary").animate({
 		opacity: '0',
 		borderRadius: '50%',
-		height: '30px',
-		width: '30px',
+		height: '40px',
+		width: '40px',
 		bottom: '25px',
 		right: '25px',
 		zIndex: '5'
@@ -68,8 +68,8 @@ function mentorClose() {
 	$(".btn-mentor").animate({
 		opacity: '100',
 		borderRadius: '50%',
-		height: '30px',
-		width: '30px',
+		height: '40px',
+		width: '40px',
 		bottom: '25px',
 		right: '25px',
 		zIndex: '10'
