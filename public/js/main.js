@@ -19,6 +19,13 @@ function initializePage() {
 	$(".btn-person-click").click(personClick);
 	$('.btn-mentor-click').click(mentorAnimate);
 	$('.btn-mentor-close').click(mentorClose);
+	$(".btn-logout-click").click(logOut);
+}
+
+function logOut(e) {
+	e.preventDefault();
+	$(this).css("background-color", "#e8e8e8");
+	window.location = '/';
 }
 
 function personClick(e) {
@@ -85,7 +92,7 @@ function navFill() {
 	if (window.location.pathname=='/main' || window.location.pathname=='/mentors') {
 		$('#i-home').css("fill", "#FFCD00");
 	} else if (window.location.pathname=='/friends') {
-		$('#i-msg').css("fill", "#FFCD00");
+		$('#i-star').css("fill", "#FFCD00");
 	} else if (window.location.pathname=='/profile') {
 		$('#i-user').css("fill", "#FFCD00");
 	} else if (window.location.pathname=='/settings') {
