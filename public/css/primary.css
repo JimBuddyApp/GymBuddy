@@ -65,26 +65,25 @@ a.btn-person-font {
     justify-content: center;
     align-items: center;
     background-color: var(--color-primary);
-    padding: 10px;
+    height: calc(var(--vh, 1vh) * 100 * 0.1);
 }
 
-.main-header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 5px;
-    margin-left: 0;
-    margin-right: 0;
-    height: 20%;
+.main-middle {
+    position: relative;
+    overflow-y: hidden;
+    margin-bottom: auto;
+    flex-shrink: 100;
+    height: calc(var(--vh, 1vh) * 100 * 0.8);
+    z-index: 5;
 }
 
 .main-scroll {
-    position: relative;
     overflow-y: scroll;
     background-color: white;
     margin-bottom: auto;
     flex-shrink: 100;
+    height: calc(var(--vh, 1vh) * 100 * 0.8);
+    z-index: 10;
 }
 
 .main-mentors {
@@ -97,7 +96,7 @@ a.btn-person-font {
 
 nav {
     background-color: var(--color-primary);
-    height: 70px;
+    height: calc(var(--vh, 1vh) * 100 * 0.1);
 }
 
 nav:hover {
@@ -130,6 +129,34 @@ nav:hover {
     bottom: 25px;
     right: 25px;
     box-shadow: 1px 1px 5px 0px gray;
+    z-index: 10;
+}
+
+.btn-mentor-secondary {
+    opacity: 0;
+    display: flex;
+    background-color: var(--color-quinary);
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    bottom: 25px;
+    right: 25px;
+    z-index: 5;
+}
+
+.btn-mentor-close {
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    bottom: 25px;
+    right: 25px;
+    z-index: 5;
 }
 
 .btn-mentor-icon {

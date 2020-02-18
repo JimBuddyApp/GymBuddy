@@ -17,19 +17,14 @@ function initializePage() {
 	console.log("Javascript connected!");
 
 	$(".btn-person-click").click(personClick);
-	$(".btn-search-click").click(mentorClick);
 	$('.btn-mentor-click').click(mentorAnimate);
+	$('.btn-mentor-close').click(mentorClose);
 }
 
 function personClick(e) {
 	e.preventDefault();
 	$(this).css("background-color", "#e8e8e8");
 	window.location = '/accounts';
-}
-
-function mentorClick(e) {
-	e.preventDefault();
-	window.location = '/search';
 }
 
 function mentorAnimate() {
@@ -39,9 +34,51 @@ function mentorAnimate() {
 		right: '0px',
 		height: '100%', 
 		width: '100%',
+		opacity: '0',
+		zIndex: '5'
+	}),
 
+	$(".btn-mentor-secondary").animate({
+		borderRadius: '0px',
+		bottom: '0px',
+		right: '0px',
+		height: '100%', 
+		width: '100%',
+		opacity: '100',
+		zIndex: '10'
+	}),
 
-	});
+	$(".btn-mentor-close").animate({
+		opacity: '100',
+		zIndex: '15'
+	})
+}
+
+function mentorClose() {
+	$(".btn-mentor-secondary").animate({
+		opacity: '0',
+		borderRadius: '50%',
+		height: '30px',
+		width: '30px',
+		bottom: '25px',
+		right: '25px',
+		zIndex: '5'
+	}),
+
+	$(".btn-mentor").animate({
+		opacity: '100',
+		borderRadius: '50%',
+		height: '30px',
+		width: '30px',
+		bottom: '25px',
+		right: '25px',
+		zIndex: '10'
+	}),
+
+	$(".btn-mentor-close").animate({
+		opacity: '0',
+		zIndex: '5'
+	})
 }
 
 function navFill() {

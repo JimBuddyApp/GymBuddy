@@ -39,6 +39,21 @@
             "name": "Beyonce",
             "description": "Good Singer",
             "imageURL": "images/svg/basic_eye.svg"
+        },
+        {
+            "name": "Michael Scott",
+            "description": "#1 Boss",
+            "imageURL": "images/svg/basic_eye.svg"
+        },
+        {
+            "name": "Kyle Harris",
+            "description": "HCI Student",
+            "imageURL": "images/svg/basic_eye.svg"
+        },
+        {
+            "name": "Donald Trump",
+            "description": "Biggest Hands Ever",
+            "imageURL": "images/svg/basic_eye.svg"
         }
     ]
 }
