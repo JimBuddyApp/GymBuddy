@@ -6,7 +6,7 @@
             "mentorToggle": "1",
             "name": "Scott Klemmer",
             "description": "HCI Prof",
-            "imageURL": "images/svg/basic_eye.svg"
+            "imageURL": "images/stock/scottk.jpg"
         },
         {
             "isFriend": "0",
@@ -14,7 +14,7 @@
             "mentorToggle": "0",
             "name": "Barack Obama",
             "description": "President guy",
-            "imageURL": "images/svg/basic_eye.svg"
+            "imageURL": "images/stock/obama.jpg"
         },
         {
             "isFriend": "0",
@@ -22,7 +22,7 @@
             "mentorToggle": "0",
             "name": "Michael Jordan",
             "description": "Basketball star",
-            "imageURL": "images/svg/basic_eye.svg"
+            "imageURL": "images/stock/mjordan.jpg"
         },
         {
             "isFriend": "1",
@@ -30,7 +30,7 @@
             "mentorToggle": "1",
             "name": "Austin Roddick",
             "description": "HCI student",
-            "imageURL": "images/svg/basic_eye.svg"
+            "imageURL": "images/stock/austin.jpg"
         },
         {
             "isFriend": "0",
@@ -38,7 +38,7 @@
             "mentorToggle": "1",
             "name": "Sam Baik",
             "description": "HCI student",
-            "imageURL": "images/svg/basic_eye.svg"
+            "imageURL": "images/stock/pikachu.jpg"
         },
         {
             "isFriend": "0",
@@ -46,7 +46,7 @@
             "mentorToggle": "0",
             "name": "John Smith",
             "description": "generic name",
-            "imageURL": "images/svg/basic_eye.svg"
+            "imageURL": "images/stock/dp.jpg"
         },
         {
             "isFriend": "0",
@@ -54,7 +54,7 @@
             "mentorToggle": "0",
             "name": "Tyler Durden",
             "description": "Fight Club",
-            "imageURL": "images/svg/basic_eye.svg"
+            "imageURL": "images/stock/durden.jpg"
         },
         {
             "isFriend": "0",
@@ -62,7 +62,7 @@
             "mentorToggle": "0",
             "name": "Beyonce",
             "description": "Good Singer",
-            "imageURL": "images/svg/basic_eye.svg"
+            "imageURL": "images/stock/beyonce.jpg"
         },
         {
             "isFriend": "0",
@@ -70,7 +70,7 @@
             "mentorToggle": "1",
             "name": "Michael Scott",
             "description": "#1 Boss",
-            "imageURL": "images/svg/basic_eye.svg"
+            "imageURL": "images/stock/mscott.jpg"
         },
         {
             "isFriend": "0",
@@ -78,7 +78,7 @@
             "mentorToggle": "0",
             "name": "Kyle Harris",
             "description": "HCI Student",
-            "imageURL": "images/svg/basic_eye.svg"
+            "imageURL": "images/stock/pikachu.jpg"
         },
         {
             "isFriend": "0",
@@ -86,7 +86,7 @@
             "mentorToggle": "1",
             "name": "Donald Trump",
             "description": "Biggest Hands Ever",
-            "imageURL": "images/svg/basic_eye.svg"
+            "imageURL": "images/stock/trump.jpg"
         },
         {
             "isFriend": "0",
