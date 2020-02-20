@@ -1,9 +1,14 @@
 {
     "mentors": [
         {
-            "name": "Scott Klemmer",
-            "description": "HCI Prof",
-            "imageURL": "images/svg/basic_eye.svg"
+            "name": "Dwayne Johnson",
+            "description": "The Rock",
+            "imageURL": "images/stock/rock.jpg"
+        },
+        {
+            "name": "Unicorn Steve",
+            "description": "Only a few screws loose",
+            "imageURL": "images/stock/unicorn.jpg"
         }
     ]
 }

@@ -1,59 +1,95 @@
 {
     "users": [
         {
+            "userName": "sklemmer",
+            "mentorToggle": "1",
             "name": "Scott Klemmer",
             "description": "HCI Prof",
             "imageURL": "images/svg/basic_eye.svg"
         },
         {
+            "userName": "bobama",
+            "mentorToggle": "0",
             "name": "Barack Obama",
             "description": "President guy",
             "imageURL": "images/svg/basic_eye.svg"
         },
         {
+            "userName": "mjordan",
+            "mentorToggle": "0",
             "name": "Michael Jordan",
             "description": "Basketball star",
             "imageURL": "images/svg/basic_eye.svg"
         },
         {
+            "userName": "aroddick",
+            "mentorToggle": "1",
             "name": "Austin Roddick",
             "description": "HCI student",
             "imageURL": "images/svg/basic_eye.svg"
         },
         {
+            "userName": "sbaik",
+            "mentorToggle": "1",
             "name": "Sam Baik",
             "description": "HCI student",
             "imageURL": "images/svg/basic_eye.svg"
         },
         {
+            "userName": "jsmith",
+            "mentorToggle": "0",
             "name": "John Smith",
             "description": "generic name",
             "imageURL": "images/svg/basic_eye.svg"
         },
         {
+            "userName": "tdurden",
+            "mentorToggle": "0",
             "name": "Tyler Durden",
             "description": "Fight Club",
             "imageURL": "images/svg/basic_eye.svg"
         },
         {
+            "userName": "byonce",
+            "mentorToggle": "0",
             "name": "Beyonce",
             "description": "Good Singer",
             "imageURL": "images/svg/basic_eye.svg"
         },
         {
+            "userName": "mscott",
+            "mentorToggle": "1",
             "name": "Michael Scott",
             "description": "#1 Boss",
             "imageURL": "images/svg/basic_eye.svg"
         },
         {
+            "userName": "kharris",
+            "mentorToggle": "0",
             "name": "Kyle Harris",
             "description": "HCI Student",
             "imageURL": "images/svg/basic_eye.svg"
         },
         {
+            "userName": "dtrump",
+            "mentorToggle": "1",
             "name": "Donald Trump",
             "description": "Biggest Hands Ever",
             "imageURL": "images/svg/basic_eye.svg"
+        },
+        {
+            "userName": "djohnson",
+            "mentorToggle": "1",
+            "name": "Dwayne Johnson",
+            "description": "The Rock",
+            "imageURL": "images/stock/rock.jpg"
+        },
+        {
+            "userName": "unicornboi",
+            "mentorToggle": "1",
+            "name": "Unicorn Steve",
+            "description": "Only a few screws loose",
+            "imageURL": "images/stock/unicorn.jpg"
         }
     ]
 }

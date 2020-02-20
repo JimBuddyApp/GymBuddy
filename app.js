@@ -12,12 +12,12 @@ var errorHandler = require('errorhandler');
 // Require routes here
 var login = require('./routes/login');
 var index = require('./routes/index');
-var search = require('./routes/search');
 var friends = require('./routes/friends');
 var addfriend = require('./routes/addfriend');
 var profile = require('./routes/profile');
-var accounts = require('./routes/accounts');
+var account = require('./routes/account');
 var settings = require('./routes/settings');
+var mentormatch = require('./routes/mentormatch');
 
 var app = express();
 
@@ -46,12 +46,12 @@ if ('development' == app.get('env')) {
 // Add routes here
 app.get('/', login.view);
 app.get('/main', index.view);
-app.get('/search', search.view);
 app.get('/friends', friends.view);
-app.get('/addfriend', addfriend.addFriend);
 app.get('/profile', profile.view);
-app.get('/accounts', accounts.view);
 app.get('/settings', settings.view);
+app.get('/mentormatch', mentormatch.view);
+app.get('/:userName', account.view);
+app.get('/addfriend', addfriend.addFriend);
 
 app.use(express.static(path.join(__dirname, 'public')));
 http.createServer(app).listen(app.get('port'), function(){

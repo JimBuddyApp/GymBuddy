@@ -1,45 +1,37 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
-        <link rel="stylesheet" href="css/primary.css">
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
-    </head>
-    <body>
-        <div class='container'>
-        <div class="profile-home">
-            <div class="btn-back">
-                <a href="index.html" class="btn-back-font">Back</a>
-            </div>
-            <span id='profile-text'><h2>My Profile</h2></span>
-            <div class='profile-photo'>
-                <img src="images/1wi3t0TU_400x400.jpg" width="150"; height:="150">
-            </div>
-            <div class="btn-changephoto">
-                <a href="images/mentors.html" class="btn-changephoto-font">Change Profile Photo</a>
-            </div>
-            <br>
-            <div class='profile-switch'>
-                Discoverable as a Mentor
-                <input id="cb" type="checkbox">
-                <span class="slider round"></span>
-            </div>
-                <br>
-                <div class='profile-name'>
-                Name: John Smith
-                </div>
-                <br>
-                <div class='profile-workout'>
-                    Main Type of Workout:
-                    <br>
-                    <input type="radio" name="type" value="weight"> Weight<br>
-                    <input type="radio" name="type" value="flexibility"> Flexibility<br>    
-                    <input type="radio" name="type" value="cardio"> Cardio
-                </div>
-        </div>
-        </div>
-    </body>
+<div class="main-scroll">
+    <div class="btn-person header-profile">
+        <p class="header-font">
+            {{name}}
+        </p>
+    </div>
+    <div class='profile-photo'>
+        <img src="images/stock/dp.jpg" width="150"; height:="150">
+    </div>
+    <br>
+    <p>{{description}}</p>
+    <div class='profile-switch'>
+        Available for Mentorship
+    </div>
+    <div class='profile-name'>
+        Name: John Smith
+    </div>
+    
+    
+    <div class='profile-workout'>
+        Main Type of Workout:
+        <br>
+        <input type="radio" disabled id="radio1" name="type" value="weight">
+        <label for="radio1">Weight</label>
 
-</html>
+        <input type="radio" disabled id="radio2" name="type" value="flexibility" checked="checked">
+        <label for="radio2">Flexibility</label>
+
+        <input type="radio" disabled id="radio3" name="type" value="cardio">
+        <label for="radio3">Cardio</label>
+    </div>
+    <br>
+    <form id="addFriendForm" role="form" method="get" action="/addfriend">
+        <input type="submit" class="add-friend-btn" id="submitBtn" class="btn btn-default" value="Add Friend"></input>
+    </form>
+    
+</div>
