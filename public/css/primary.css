@@ -254,7 +254,12 @@ svg.icon-forward {
     display: flex;
 }
 
-/* Profile */
+/* Account */
+.account-container {
+    display: flex;
+    flex-direction: column;
+}
+
 .add-friend-btn
 {
     justify-content: center;
@@ -266,7 +271,7 @@ svg.icon-forward {
     
 }
 
-.profile-description {
+.account-description {
     text-align: center;
     font-size: 16px;
     font-weight: bold;
@@ -278,14 +283,14 @@ svg.icon-forward {
     background-color: var(--color-primary);
 }
 
-.profile-workout {
+.account-workout {
     align-items: center;
     padding: 25px;
     border-radius: 40px;
     border: 2px solid var(--color-secondary);
 }
 
-.profile-switch {
+.account-switch {
     align-items: center;
     padding: 25px;
     border-radius: 40px;
@@ -298,19 +303,21 @@ svg.icon-forward {
     display: flex;
 }
 
-.profile-photo {
-    justify-content: center;
-    align-items: center;
-    display: flex;
+.account-photo {
+    align-self: center;
     margin-top: 20px;
+    height: 150px;
+    width: 150px;
+    clip-path: circle(50% at 50% 50%);
+    shape-outside: circle(50% at 50% 50%);
 }
 
-.profile-workout input[type="radio"]
+.account-workout input[type="radio"]
 {
     display: none;
 }
 
-.profile-workout label
+.account-workout label
 {
     display: inline-block;
     border-radius: 40px;
@@ -321,7 +328,7 @@ svg.icon-forward {
     cursor: pointer;
 }
 
-.profile-workout input[type="radio"]:checked+label
+.account-workout input[type="radio"]:checked+label
 {
     background-color: #bbb;
 }
