@@ -1,10 +1,10 @@
 var friends = require('../buddies.json');
 
 exports.view = function(request, response){
-    var user = search(request.params.userName);
+    var name = request.params.userName;
+    var user = search(name);
     console.log(user);
     response.render('account', user);
-
 }
 
 function search(userName) {
@@ -15,5 +15,5 @@ function search(userName) {
         }
     }
 
-    return item;
+    return userName;
 }

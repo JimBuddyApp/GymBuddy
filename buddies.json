@@ -1,6 +1,7 @@
 {
     "users": [
         {
+            "isFriend": "0",
             "userName": "sklemmer",
             "mentorToggle": "1",
             "name": "Scott Klemmer",
@@ -8,6 +9,7 @@
             "imageURL": "images/svg/basic_eye.svg"
         },
         {
+            "isFriend": "0",
             "userName": "bobama",
             "mentorToggle": "0",
             "name": "Barack Obama",
@@ -15,6 +17,7 @@
             "imageURL": "images/svg/basic_eye.svg"
         },
         {
+            "isFriend": "0",
             "userName": "mjordan",
             "mentorToggle": "0",
             "name": "Michael Jordan",
@@ -22,6 +25,7 @@
             "imageURL": "images/svg/basic_eye.svg"
         },
         {
+            "isFriend": "1",
             "userName": "aroddick",
             "mentorToggle": "1",
             "name": "Austin Roddick",
@@ -29,6 +33,7 @@
             "imageURL": "images/svg/basic_eye.svg"
         },
         {
+            "isFriend": "0",
             "userName": "sbaik",
             "mentorToggle": "1",
             "name": "Sam Baik",
@@ -36,6 +41,7 @@
             "imageURL": "images/svg/basic_eye.svg"
         },
         {
+            "isFriend": "0",
             "userName": "jsmith",
             "mentorToggle": "0",
             "name": "John Smith",
@@ -43,6 +49,7 @@
             "imageURL": "images/svg/basic_eye.svg"
         },
         {
+            "isFriend": "0",
             "userName": "tdurden",
             "mentorToggle": "0",
             "name": "Tyler Durden",
@@ -50,6 +57,7 @@
             "imageURL": "images/svg/basic_eye.svg"
         },
         {
+            "isFriend": "0",
             "userName": "byonce",
             "mentorToggle": "0",
             "name": "Beyonce",
@@ -57,6 +65,7 @@
             "imageURL": "images/svg/basic_eye.svg"
         },
         {
+            "isFriend": "0",
             "userName": "mscott",
             "mentorToggle": "1",
             "name": "Michael Scott",
@@ -64,6 +73,7 @@
             "imageURL": "images/svg/basic_eye.svg"
         },
         {
+            "isFriend": "0",
             "userName": "kharris",
             "mentorToggle": "0",
             "name": "Kyle Harris",
@@ -71,6 +81,7 @@
             "imageURL": "images/svg/basic_eye.svg"
         },
         {
+            "isFriend": "0",
             "userName": "dtrump",
             "mentorToggle": "1",
             "name": "Donald Trump",
@@ -78,6 +89,7 @@
             "imageURL": "images/svg/basic_eye.svg"
         },
         {
+            "isFriend": "0",
             "userName": "djohnson",
             "mentorToggle": "1",
             "name": "Dwayne Johnson",
@@ -85,6 +97,7 @@
             "imageURL": "images/stock/rock.jpg"
         },
         {
+            "isFriend": "0",
             "userName": "unicornboi",
             "mentorToggle": "1",
             "name": "Unicorn Steve",

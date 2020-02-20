@@ -254,13 +254,7 @@ svg.icon-forward {
     display: flex;
 }
 
-.profile-name {
-    align-items: center;
-    padding: 25px;
-    border-radius: 40px;
-    border: 2px solid var(--color-secondary);
-}
-
+/* Profile */
 .add-friend-btn
 {
     justify-content: center;
@@ -270,6 +264,12 @@ svg.icon-forward {
     color: white;
     border-radius: 40px;
     
+}
+
+.profile-description {
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
 }
 
 .profile-header

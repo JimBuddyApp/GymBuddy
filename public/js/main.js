@@ -88,7 +88,7 @@ function mentorClose() {
 }
 
 function navFill() {
-	if (window.location.pathname=='/main' || window.location.pathname=='/mentors') {
+	if (window.location.pathname=='/main' || window.location.pathname=='/mentormatch') {
 		$('#i-home').css("fill", "#FFCD00");
 	} else if (window.location.pathname=='/friends') {
 		$('#i-star').css("fill", "#FFCD00");
