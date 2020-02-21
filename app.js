@@ -18,6 +18,7 @@ var profile = require('./routes/profile');
 var account = require('./routes/account');
 var settings = require('./routes/settings');
 var mentormatch = require('./routes/mentormatch');
+var signup = require('./routes/signup');
 
 var app = express();
 
@@ -52,6 +53,7 @@ app.get('/settings', settings.view);
 app.get('/mentormatch', mentormatch.view);
 app.get('/:userName', account.view);
 app.get('/addfriend', addfriend.addFriend);
+app.get('/signup', signup.view);
 
 app.use(express.static(path.join(__dirname, 'public')));
 http.createServer(app).listen(app.get('port'), function(){
