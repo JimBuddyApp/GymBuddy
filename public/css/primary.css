@@ -265,11 +265,14 @@ svg.icon-forward {
 {
     justify-content: center;
     display: flex;
-    padding: 25px;
-    background-color: var(--color-primary);
+    padding: 20px;
+    background-color: var(--color-quinary);
     color: white;
-    border-radius: 40px;
-    
+    border-radius: 20px;
+}
+
+#addFriendForm {
+    align-self: center;
 }
 
 .account-description {
