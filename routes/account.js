@@ -4,8 +4,7 @@ exports.view = function(request, response){
     var name = request.params.userName;
     var user = search(name);
     console.log(user);
-    //response.render('account', user);
-    response.render('account');
+    response.render('account', user);
 }
 
 function search(userName) {
