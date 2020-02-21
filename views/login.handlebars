@@ -1,112 +1,50 @@
 <head>
-<style>
-    h1.serif
-    {
-        font-family: Arial, Helvetica, sans-serif;
-        color: gold;
-        text-align: center;
-        font-size : 60px;
-    }
-    img 
-    {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    }
-    div.ex1
-    {
-        border: 1px solid rgb(34, 140, 211);
-        border-radius : 5px;
-        background-color: rgb(34, 140, 211);
-        padding: 60px;
-        padding-bottom: 150px; 
-        text-align: center;
-        font-size: 20px;
-        color: white;
-        font-family: Arial, Helvetica, sans-serif;
-    }
-    .text
-    {
-        vertical-align: text-top;
-    }
-    .button1 
-    {
-        background-color:orange;
-        border: none;
-        border-radius: 20px;
-        color: white;
-        
-        
-        text-align: center;
-        padding: 10px 60px;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 22px;
-         margin: 2px 2px;
-        cursor: pointer;
-}
-.button2 
-    {
-        background-color:rgb(23, 41, 121);
-        border: none;
-        border-radius: 20px;
-        color: white;
-        
-        
-        text-align: center;
-        padding: 10px 95px;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 22px;
-         margin: 2px 2px;
-        cursor: pointer;
-}
-</style>
     <meta charset="UTF-8">
-    <title></title>   
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Jim Buddy: Log In</title>   
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
     <link rel="stylesheet" href= "css/style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
     <link rel="stylesheet" href="css/primary.css">
+    <link rel="stylesheet" href="css/login.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
     <script src="js/jquery-1.11.0.js"></script>
    
 </head>
-<body style="background-color: rgb(27, 33, 71);">
-<div class="wrapper viewport-height">
-<img src="images/trident.png" alt="trident" style="width:150px;height:100px;">
-<h1 class="serif">jim buddy</h1>
-    <div class="ex1">
-        <p1 class="text">Sign In</p>
-        <form>
-            <div style="text-align:center">
-                <label>Email Address:</label>
-                <br/>
-                <input>
-            </div>
-        </form>
-        <form>
+<body>
+    <div class="wrapper viewport-height">
+        <div class='header'>
+            <img src="images/temporary-logo.png" alt="trident">
+            <h1 class="serif">jim buddy</h1>
+        </div>
+        <div class="form-wrapper">
+            <p1 class="text">Sign In</p>
+            <form>
+                <div class='input'>
+                    <label>Email Address:</label>
+                    <br/>
+                    <input>
+                </div>
+            </form>
+            <form>
+                <div class='input'>
+                    <label>Password:</label>
+                    <br/>
+                    <input>
+                </div>
+            </form>
+            <br>
             <div>
-                <label>Password:</label>
-                <br/>
-                <input>
+                <button class="button1" onclick="window.location.href='/main'">LOG IN</button>           
             </div>
-        </form>
-        <br>
-        <div>
-            <button class="button1" onclick="window.location.href='/main'">LOG IN</button>           
+            <div>
+                <button class="button2">f</button>
+            </div>
+            <br>
+            <div class="footer"><a href="/signup">New? Sign up</a></div>
+            <br>
+            <div class="footer"><a href="/main">Forget Password?</a></div>
         </div>
-        <div>
-            <button class="button2">f</button>
-        </div>
-        <br>
-        <div class="footer"><a href="/signup">New? Sign up</a></div>
-        <br>
-        <div class="footer"><a href="/main">Forget Password?</a></div>
-        
-    </div>
-    
-</div> 
+    </div> 
 </body>
