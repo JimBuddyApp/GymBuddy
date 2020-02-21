@@ -30,23 +30,18 @@
             <span class="slider round"></span>
         </label>
     </div>
-    <form>
-        <div class='input'>
-            <label>Name</label>
-            <input>
-        </div>
-    </form>
-    <div class='account-workout'>
-        Main Type of Workout:
-        <br>
-        <input type="radio" id="radio1" name="type" value="weight">
-        <label for="radio1">Weight</label>
-
-        <input type="radio" id="radio2" name="type" value="flexibility">
-        <label for="radio2">Flexibility</label>
-
-        <input type="radio" id="radio3" name="type" value="cardio">
-        <label for="radio3">Cardio</label>
+    <div class="col-md-4 mb-3">
+      <label for="validationCustom01">Name</label>
+      <input type="text" class="form-control" id="validationCustom01" placeholder="Name" value="Jim Bo" required>
+      <div class="valid-feedback">
+        Looks good!
+      </div>
     </div>
-
+    <div class="btn-group account-workout" role="group" aria-label="Basic example">
+        Main Type of Workout: 
+        <br>
+        <button type="button" class="btn btn-secondary">Weight</button>
+        <button type="button" class="btn btn-secondary">Flexibility</button>
+        <button type="button" class="btn btn-secondary">Cardio</button>
+    </div>
 </div>
