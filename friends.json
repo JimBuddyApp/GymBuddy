@@ -1,12 +1,5 @@
 {
     "friends": [
-        {
-            "isFriend": "1",
-            "userName": "aroddick",
-            "mentorToggle": "1",
-            "name": "Austin Roddick",
-            "description": "HCI student",
-            "imageURL": "images/svg/basic_eye.svg"
-        }
+        
     ]
 }

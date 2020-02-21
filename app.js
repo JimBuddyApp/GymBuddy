@@ -13,7 +13,7 @@ var errorHandler = require('errorhandler');
 var login = require('./routes/login');
 var index = require('./routes/index');
 var friends = require('./routes/friends');
-var addfriend = require('./routes/addfriend');
+//var addfriend = require('./routes/addfriend');
 var profile = require('./routes/profile');
 var account = require('./routes/account');
 var settings = require('./routes/settings');
@@ -54,8 +54,8 @@ app.get('/profile', profile.view);
 app.get('/edit', edit.view);
 app.get('/settings', settings.view);
 app.get('/mentormatch', mentormatch.view);
+app.get('/addfriend', account.addfriend);
 app.get('/:userName', account.view);
-app.get('/addfriend', addfriend.addFriend);
 
 app.use(express.static(path.join(__dirname, 'public')));
 http.createServer(app).listen(app.get('port'), function(){

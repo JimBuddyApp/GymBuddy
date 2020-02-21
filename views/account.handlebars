@@ -26,8 +26,10 @@
         <label for="radio3">Cardio</label>
     </div>
     <br>
-    <form id="addFriendForm" role="form" method="get" action="/addfriend">
-        <input type="submit" class="add-friend-btn" id="submitBtn" class="btn btn-default" value="Add Friend"></input>
-    </form>
+        {{#if isFriend}}
+        <div></div>
+        {{else}}
+        <input type="submit" class="add-friend-btn" id="submitBtn" class="btn btn-default" value="Add Friend" onclick="window.location.href='/addfriend'"></input>
+        {{/if}}
     
 </div>

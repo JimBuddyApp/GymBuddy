@@ -1,7 +1,7 @@
 {
     "users": [
         {
-            "isFriend": "0",
+            "isFriend": false,
             "userName": "sklemmer",
             "mentorToggle": "1",
             "name": "Scott Klemmer",
@@ -9,7 +9,7 @@
             "imageURL": "images/stock/scottk.jpg"
         },
         {
-            "isFriend": "0",
+            "isFriend": false,
             "userName": "bobama",
             "mentorToggle": "0",
             "name": "Barack Obama",
@@ -17,7 +17,7 @@
             "imageURL": "images/stock/obama.jpg"
         },
         {
-            "isFriend": "0",
+            "isFriend": false,
             "userName": "mjordan",
             "mentorToggle": "0",
             "name": "Michael Jordan",
@@ -25,7 +25,7 @@
             "imageURL": "images/stock/mjordan.jpg"
         },
         {
-            "isFriend": "1",
+            "isFriend": false,
             "userName": "aroddick",
             "mentorToggle": "1",
             "name": "Austin Roddick",
@@ -33,7 +33,7 @@
             "imageURL": "images/stock/austin.jpg"
         },
         {
-            "isFriend": "0",
+            "isFriend": false,
             "userName": "sbaik",
             "mentorToggle": "1",
             "name": "Sam Baik",
@@ -41,7 +41,7 @@
             "imageURL": "images/stock/pikachu.jpg"
         },
         {
-            "isFriend": "0",
+            "isFriend": false,
             "userName": "jsmith",
             "mentorToggle": "0",
             "name": "John Smith",
@@ -49,7 +49,7 @@
             "imageURL": "images/stock/dp.jpg"
         },
         {
-            "isFriend": "0",
+            "isFriend": false,
             "userName": "tdurden",
             "mentorToggle": "0",
             "name": "Tyler Durden",
@@ -57,7 +57,7 @@
             "imageURL": "images/stock/durden.jpg"
         },
         {
-            "isFriend": "0",
+            "isFriend": false,
             "userName": "byonce",
             "mentorToggle": "0",
             "name": "Beyonce",
@@ -65,7 +65,7 @@
             "imageURL": "images/stock/beyonce.jpg"
         },
         {
-            "isFriend": "0",
+            "isFriend": false,
             "userName": "mscott",
             "mentorToggle": "1",
             "name": "Michael Scott",
@@ -73,7 +73,7 @@
             "imageURL": "images/stock/mscott.jpg"
         },
         {
-            "isFriend": "0",
+            "isFriend": false,
             "userName": "kharris",
             "mentorToggle": "0",
             "name": "Kyle Harris",
@@ -81,7 +81,7 @@
             "imageURL": "images/stock/pikachu.jpg"
         },
         {
-            "isFriend": "0",
+            "isFriend": false,
             "userName": "dtrump",
             "mentorToggle": "1",
             "name": "Donald Trump",
@@ -89,7 +89,7 @@
             "imageURL": "images/stock/trump.jpg"
         },
         {
-            "isFriend": "0",
+            "isFriend": false,
             "userName": "djohnson",
             "mentorToggle": "1",
             "name": "Dwayne Johnson",
@@ -97,7 +97,7 @@
             "imageURL": "images/stock/rock.jpg"
         },
         {
-            "isFriend": "0",
+            "isFriend": false,
             "userName": "unicornboi",
             "mentorToggle": "1",
             "name": "Unicorn Steve",

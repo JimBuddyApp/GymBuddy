@@ -263,12 +263,15 @@ svg.icon-forward {
 
 .add-friend-btn
 {
-    justify-content: center;
+    align-self: center;
     display: flex;
     padding: 20px;
     background-color: var(--color-quinary);
     color: white;
     border-radius: 20px;
+    width: 150px;
+    text-transform: uppercase;
+    letter-spacing: .7px;
 }
 
 #addFriendForm {
