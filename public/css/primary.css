@@ -248,8 +248,9 @@ svg.icon-forward {
     background-color: white;
 }
 
-.btn-changephoto-font {
-    color: black;
+.btn-edit{
+    margin-top: 5px;
+    margin-bottom: 0px;
     justify-content: center;
     display: flex;
 }

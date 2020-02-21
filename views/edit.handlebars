@@ -1,5 +1,6 @@
 <head>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel='stylesheet' href='css/login.css'>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
@@ -9,7 +10,7 @@
         }
     </style>
 </head>
-<div class="main-scroll account-container" >
+<div class="main-scroll account-container">
     <div class="btn-person header-profile">
         <p class="header-font">
             My Profile
@@ -19,7 +20,7 @@
         <img src="images/stock/dp.jpg" width="150"; height:="150">
     </div>
     <div class="btn-edit">
-        <button type='button' class="btn btn-primary" onclick="window.location.href='/edit'">Edit Profile</button> 
+        <button type='button' class="btn btn-primary" onclick="window.location.href='/edit'">Change Profile Photo</button> 
     </div>
     <br>
     <div class='account-switch'>
@@ -29,6 +30,12 @@
             <span class="slider round"></span>
         </label>
     </div>
+    <form>
+        <div class='input'>
+            <label>Name</label>
+            <input>
+        </div>
+    </form>
     <div class='account-workout'>
         Main Type of Workout:
         <br>
@@ -41,5 +48,5 @@
         <input type="radio" id="radio3" name="type" value="cardio">
         <label for="radio3">Cardio</label>
     </div>
-    
+
 </div>
