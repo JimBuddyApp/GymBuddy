@@ -410,6 +410,10 @@ a.header-font-mentor {
     transition: .4s;
   }
   
+  .input {
+    text-align:center;
+  }
+
   input:checked + .slider {
     background-color: var(--color-primary);
   }
