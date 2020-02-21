@@ -46,6 +46,7 @@ if ('development' == app.get('env')) {
 
 // Add routes here
 app.get('/', login.view);
+app.get('/signup', signup.view);
 app.get('/main', index.view);
 app.get('/friends', friends.view);
 app.get('/profile', profile.view);
@@ -53,7 +54,6 @@ app.get('/settings', settings.view);
 app.get('/mentormatch', mentormatch.view);
 app.get('/:userName', account.view);
 app.get('/addfriend', addfriend.addFriend);
-app.get('/signup', signup.view);
 
 app.use(express.static(path.join(__dirname, 'public')));
 http.createServer(app).listen(app.get('port'), function(){
