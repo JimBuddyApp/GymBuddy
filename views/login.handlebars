@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="css/login.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
     <script src="js/jquery-1.11.0.js"></script>
+    {{>facebook}}
+    <script src="/js/facebook.js"></script>
    
 </head>
 <body>
@@ -38,8 +40,12 @@
                 <button class="button1" onclick="window.location.href='/main'">LOG IN</button>           
             </div>
             <div>
-                <button class="button2">f</button>
+                <p class="facebookLogin" onclick="window.location.href='/main'">
+                    <fb:login-button scope="public_profile,email" onlogin="checkLoginState(); window.location.href='/main'">
+                    </fb:login-button>
+			    </p>
             </div>
+            
             <br>
             <div class="footer"><a href="/signup">New? Sign up</a></div>
             <br>
