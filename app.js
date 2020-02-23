@@ -55,6 +55,7 @@ app.get('/edit', edit.view);
 app.get('/settings', settings.view);
 app.get('/mentormatch', mentormatch.view);
 app.get('/addfriend', account.addfriend);
+app.get('/register', signup.register);
 app.get('/:userName', account.view);
 
 app.use(express.static(path.join(__dirname, 'public')));
