@@ -15,19 +15,20 @@ $(document).ready(function() {
  */
 function initializePage() {
 	console.log("Javascript connected!");
-	initRegister();
+	//initRegister();
 	$(".btn-person-click").click(personClick);
 	$('.btn-mentor-click').click(mentorAnimate);
 	$('.btn-mentor-close').click(mentorClose);
 	$(".btn-logout-click").click(logOut);
 }
 
+/*
 function initRegister() {
 	$('.registerForm').submit(function(e) {
 		e.preventDefault();
 		console.log('submitting form');
 		var formName = $("#userName").val();
-		$.post('register', {name: formName}, postCallback);
+		$.get('register', {name: formName}, postCallback);
 	});
 
 	function postCallback(res) {
@@ -35,7 +36,7 @@ function initRegister() {
 		$('#userName').val('');
 	}
 }
-
+*/
 function logOut(e) {
 	e.preventDefault();
 	$(this).css("background-color", "#e8e8e8");
