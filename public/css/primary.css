@@ -316,7 +316,9 @@ svg.icon-forward {
     height: 150px;
     width: 150px;
     clip-path: circle(50% at 50% 50%);
+    -webkit-clip-path: circle(50% at 50% 50%);
     shape-outside: circle(50% at 50% 50%);
+    -webkit-shape-outside: circle(50% at 50% 50%);
 }
 
 .account-workout input[type="radio"]
