@@ -6,7 +6,9 @@ exports.view = function(request, response){
 }
 
 exports.register = function(request, response){
-    user = { "firstTime ": true};
+    var newName = $("input[id='userName']").val();
+	console.log(newName);
+    user = { "firstTime": true, "name": newName};
     profile.profile.push(user);
     console.log(profile);
     response.redirect('/edit');

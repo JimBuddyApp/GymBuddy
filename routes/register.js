@@ -3,7 +3,8 @@ var data = require("../profile.json")
 
 exports.register = function(request, response)
 {   
-	var newName = "Jim Bo";
+	var newName = $("#userName").val();
+	console.log(newName);
 	var newDescription = "It's You!";
 	newUser =
 	{
