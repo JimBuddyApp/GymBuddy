@@ -11,7 +11,7 @@ exports.register = function(request, response){
         "name": name
     };
     console.log(user);
-	// response.send(name);
-    response.render('edit', profile);
     profile.profile.push(user);
+	response.send(name);
+    response.render('edit', profile);
 }
