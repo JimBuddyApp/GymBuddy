@@ -15,7 +15,7 @@ function search(mentorList) {
     var result = [];
     var i = null;
     for (i = 0; mentorList.users.length > i; i += 1) {
-        if (mentorList.users[i].mentorToggle === "1") {
+        if (mentorList.users[i].mentorToggle === true) {
             result.push(mentorList.users[i]);
         }
     }

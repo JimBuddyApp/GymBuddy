@@ -12,28 +12,36 @@
         <img src={{imageURL}} width="150"; height:="150">
     </div>
     <p class="account-description">{{description}}</p>
-    <div class='account-switch'>
-        Available for Mentorship
+    <div class="account-block">
+        <div class="account-block-text">
+            Mentorship Status:
+        </div>
+        {{#if mentorToggle}}
+        <div class="mentorship-status-available">
+            AVAILABLE
+        </div>
+        {{else}}
+        <div class="mentorship-status-unavailable">
+            UNAVAILABLE
+        </div>
+        {{/if}}
     </div>
     
-    
-    <div class='account-workout'>
-        Workout Type:
-        <br>
-        <input type="radio" disabled id="radio1" name="type" value="weight">
-        <label for="radio1">Weight</label>
-
-        <input type="radio" disabled id="radio2" name="type" value="flexibility" checked="checked">
-        <label for="radio2">Flexibility</label>
-
-        <input type="radio" disabled id="radio3" name="type" value="cardio">
-        <label for="radio3">Cardio</label>
+    <div class='account-block'>
+        <div class="account-block-text">
+            Workout Category:
+        </div>
+        <div class="account-block-workout">
+            {{workout}}
+        </div>
     </div>
     <br>
-        {{#if isFriend}}
-        <div></div>
-        {{else}}
-        <input type="submit" class="add-friend-btn" id="submitBtn" class="btn btn-default" value="Add Friend" onclick="window.location.href='/addfriend'"></input>
-        {{/if}}
+    {{#if isFriend}}
+    <div></div>
+    {{else}}
+    <div class="add-friend-btn" id="submitBtn" onclick="window.location.href='/addfriend'">
+        ADD FRIEND
+    </div>
+    {{/if}}
     
 </div>

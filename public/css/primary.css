@@ -95,6 +95,8 @@ a.btn-person-font {
 }
 
 .main-mentors-match {
+    display: flex;
+    flex-direction: column;
     background-color: var(--color-quinary);
     color: var(--color-font-light);
     text-align: center;
@@ -182,6 +184,8 @@ nav:hover {
 
 .btn-mentor-pair {
     display: inline-block;
+    align-self: center;
+    width: 150px;
     padding: 10px 20px;
     border-radius: 10px;
     background-color: var(--color-secondary);
@@ -250,7 +254,7 @@ svg.icon-forward {
 
 .btn-edit{
     margin-top: 5px;
-    margin-bottom: 0px;
+    margin-bottom: 10px;
     justify-content: center;
     display: flex;
 }
@@ -265,13 +269,18 @@ svg.icon-forward {
 {
     align-self: center;
     display: flex;
-    padding: 20px;
-    background-color: var(--color-quinary);
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    font-size: 14px;
+    background-color: var(--color-secondary);
     color: white;
-    border-radius: 20px;
     width: 150px;
     text-transform: uppercase;
     letter-spacing: .7px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 6px 0px gray;
 }
 
 #addFriendForm {
@@ -290,18 +299,44 @@ svg.icon-forward {
     background-color: var(--color-primary);
 }
 
-.account-workout {
+.account-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
-    padding: 25px;
-    border-radius: 40px;
-    border: 2px solid var(--color-secondary);
+    font-size: 14px;
+    margin: 0 auto 10px auto; 
+    padding: 10px;
+    width: 300px;
+    border-radius: 20px;
+    background-color: var(--color-gray-light);
 }
 
-.account-switch {
-    align-items: center;
-    padding: 25px;
-    border-radius: 40px;
-    border: 2px solid var(--color-secondary);
+.account-block-text {
+    background-color: #fff;
+    padding: 8px;
+    border-radius: 15px;
+}
+
+.account-block-workout {
+    background-color: var(--color-primary);
+    color: var(--color-font-light);
+    padding: 8px;
+    border-radius: 15px;
+}
+
+.mentorship-status-available {
+    background-color: var(--color-quaternary);
+    color: var(--color-font-light);
+    padding: 8px;
+    border-radius: 15px;
+}
+
+.mentorship-status-unavailable {
+    background-color: crimson;
+    color: var(--color-font-light);
+    padding: 8px;
+    border-radius: 15px;
 }
 
 #profile-text {

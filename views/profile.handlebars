@@ -14,24 +14,27 @@
         <button type='button' class="btn btn-primary" onclick="window.location.href='/edit'">Edit Profile</button> 
     </div>
     <br>
-    <div class='account-switch'>
-        Discoverable as a Mentor
-        <label class="switch">
-            <input type="checkbox">
-            <span class="slider round"></span>
-        </label>
+    <div class="account-block">
+        <div class="account-block-text">
+            Mentorship Status:
+        </div>
+        {{#if mentorToggle}}
+        <div class="mentorship-status-available">
+            AVAILABLE
+        </div>
+        {{else}}
+        <div class="mentorship-status-unavailable">
+            UNAVAILABLE
+        </div>
+        {{/if}}
     </div>
-    <div class='account-workout'>
-        Main Type of Workout:
-        <br>
-        <input type="radio" id="radio1" name="type" value="weight">
-        <label for="radio1">Weight</label>
-
-        <input type="radio" id="radio2" name="type" value="flexibility">
-        <label for="radio2">Flexibility</label>
-
-        <input type="radio" id="radio3" name="type" value="cardio">
-        <label for="radio3">Cardio</label>
+    <div class='account-block'>
+        <div class="account-block-text">
+            Workout Category:
+        </div>
+        <div class="account-block-workout">
+            {{workout}}
+        </div>
     </div>
     
 </div>

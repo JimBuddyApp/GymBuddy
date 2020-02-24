@@ -3,106 +3,119 @@
         {
             "isFriend": false,
             "userName": "sklemmer",
-            "mentorToggle": "1",
+            "mentorToggle": true,
             "name": "Scott Klemmer",
             "description": "HCI Prof",
-            "imageURL": "images/stock/scottk.jpg"
+            "imageURL": "images/stock/scottk.jpg",
+            "workout": "CROSSFIT"
         },
         {
             "isFriend": false,
             "userName": "bobama",
-            "mentorToggle": "0",
+            "mentorToggle": false,
             "name": "Barack Obama",
             "description": "President guy",
-            "imageURL": "images/stock/obama.jpg"
+            "imageURL": "images/stock/obama.jpg",
+            "workout": "POWERLIFTING"
         },
         {
             "isFriend": false,
             "userName": "mjordan",
-            "mentorToggle": "0",
+            "mentorToggle": false,
             "name": "Michael Jordan",
             "description": "Basketball star",
-            "imageURL": "images/stock/mjordan.jpg"
+            "imageURL": "images/stock/mjordan.jpg",
+            "workout": "CROSSFIT"
         },
         {
             "isFriend": false,
             "userName": "aroddick",
-            "mentorToggle": "1",
+            "mentorToggle": true,
             "name": "Austin Roddick",
             "description": "HCI student",
-            "imageURL": "images/stock/austin.jpg"
+            "imageURL": "images/stock/austin.jpg",
+            "workout": "POWERLIFTING"
         },
         {
             "isFriend": false,
             "userName": "sbaik",
-            "mentorToggle": "1",
+            "mentorToggle": true,
             "name": "Sam Baik",
             "description": "HCI student",
-            "imageURL": "images/stock/pikachu.jpg"
+            "imageURL": "images/stock/pikachu.jpg",
+            "workout": "CROSSFIT"
         },
         {
             "isFriend": false,
             "userName": "jsmith",
-            "mentorToggle": "0",
+            "mentorToggle": false,
             "name": "John Smith",
             "description": "generic name",
-            "imageURL": "images/stock/dp.jpg"
+            "imageURL": "images/stock/dp.jpg",
+            "workout": "CROSSFIT"
         },
         {
             "isFriend": false,
             "userName": "tdurden",
-            "mentorToggle": "0",
+            "mentorToggle": false,
             "name": "Tyler Durden",
             "description": "Fight Club",
-            "imageURL": "images/stock/durden.jpg"
+            "imageURL": "images/stock/durden.jpg",
+            "workout": "CROSSFIT"
         },
         {
             "isFriend": false,
             "userName": "byonce",
-            "mentorToggle": "0",
+            "mentorToggle": false,
             "name": "Beyonce",
             "description": "Good Singer",
-            "imageURL": "images/stock/beyonce.jpg"
+            "imageURL": "images/stock/beyonce.jpg",
+            "workout": "CARDIO"
         },
         {
             "isFriend": false,
             "userName": "mscott",
-            "mentorToggle": "1",
+            "mentorToggle": true,
             "name": "Michael Scott",
             "description": "#1 Boss",
-            "imageURL": "images/stock/mscott.jpg"
+            "imageURL": "images/stock/mscott.jpg",
+            "workout": "CARDIO"
         },
         {
             "isFriend": false,
             "userName": "kharris",
-            "mentorToggle": "0",
+            "mentorToggle": false,
             "name": "Kyle Harris",
             "description": "HCI Student",
-            "imageURL": "images/stock/pikachu.jpg"
+            "imageURL": "images/stock/pikachu.jpg",
+            "workout": "POWERLIFTING"
         },
         {
             "isFriend": false,
             "userName": "dtrump",
-            "mentorToggle": "1",
+            "mentorToggle": true,
             "name": "Donald Trump",
             "description": "Biggest Hands Ever",
-            "imageURL": "images/stock/trump.jpg"
+            "imageURL": "images/stock/trump.jpg",
+            "workout": "CARDIO"
         },
         {
             "isFriend": false,
             "userName": "djohnson",
-            "mentorToggle": "1",
+            "mentorToggle": true,
             "name": "Dwayne Johnson",
             "description": "The Rock",
-            "imageURL": "images/stock/rock.jpg"
+            "imageURL": "images/stock/rock.jpg",
+            "workout": "POWERLIFTING"
         },
         {
             "isFriend": false,
             "userName": "unicornboi",
-            "mentorToggle": "1",
+            "mentorToggle": true,
             "name": "Unicorn Steve",
             "description": "Only a few screws loose",
-            "imageURL": "images/stock/unicorn.jpg"
+            "imageURL": "images/stock/unicorn.jpg",
+            "workout": "CARDIO"
         }
     ]
 }
