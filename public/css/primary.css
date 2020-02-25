@@ -392,6 +392,11 @@ svg.icon-forward {
     -webkit-shape-outside: circle(50% at 50% 50%);
 }
 
+.account-photo img {
+    width: 150px;
+    height: 150px;
+}
+
 .account-photo-small {
     height: 35px;
     width: 35px;
@@ -406,6 +411,8 @@ svg.icon-forward {
 }
 
 .account-photo-small img {
+    height: 35px;
+    width: 35px;
 }
 
 .account-workout {
