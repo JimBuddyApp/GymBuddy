@@ -21,6 +21,7 @@ var mentormatch = require('./routes/mentormatch');
 var signup = require('./routes/signup');
 var edit = require('./routes/edit');
 var register = require('./routes/register.js');
+var customize = require('./routes/customize');
 
 var app = express();
 
@@ -51,7 +52,7 @@ app.get('/', login.view);
 
 app.get('/signup', signup.view);
 app.get('/register', register.register);
-
+app.get('/customize', customize.customize);
 app.get('/main', index.view);
 app.get('/friends', friends.view);
 app.get('/profile', profile.view);

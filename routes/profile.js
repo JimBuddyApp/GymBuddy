@@ -1,3 +1,4 @@
+var profile = require('../profile.json')
 exports.view = function(request, response){
-    response.render('profile');
+    response.render('profile', profile);
 }

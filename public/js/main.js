@@ -22,21 +22,6 @@ function initializePage() {
 	$(".btn-logout-click").click(logOut);
 }
 
-/*
-function initRegister() {
-	$('.registerForm').submit(function(e) {
-		e.preventDefault();
-		console.log('submitting form');
-		var formName = $("#userName").val();
-		$.get('register', {name: formName}, postCallback);
-	});
-
-	function postCallback(res) {
-		console.log("form successfully submitted!");
-		$('#userName').val('');
-	}
-}
-*/
 function logOut(e) {
 	e.preventDefault();
 	$(this).css("background-color", "#e8e8e8");

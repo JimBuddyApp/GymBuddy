@@ -5,8 +5,9 @@
         </p>
     </div>
     <div class='account-photo'>
-        <img src="images/stock/dp.jpg" width="150"; height:="150">
+        <img src={{imageURL}} width="150"; height:="150">
     </div>
+    <form role='form' method='get' action='/customize'>
     <div class="btn-edit">
         <button type='button' class="btn btn-primary" onclick="window.location.href='/edit'">Change Profile Photo</button> 
     </div>
@@ -14,35 +15,34 @@
     <div class='account-block'>
         Discoverable as a Mentor
         <label class="switch">
-            <input type="checkbox">
+            <input type="checkbox" name='discoverable'>
             <span class="slider round"></span>
         </label>
     </div>
-    <form>
         {{#if firstTime}}
-        <div class='input'>
-            <br>
-            <label>Name:  </label>
-            <input>
+        <div style="input">
+            <label for="userName">Name:</label>
+            <br/>
+            <input type='text' id='name' name='name'></input>
         </div>
         <br>
         {{/if}}
-    </form>
     <div class='account-workout'>
         <p class='account-workout-label'>Main Type of Workout:</p>
-        <input type="radio" id="radio1" name="type" value="weight">
+        <input type="radio" id="radio1" name="workout" value="weight">
         <label for="radio1">Weight</label>
 
-        <input type="radio" id="radio2" name="type" value="flexibility">
+        <input type="radio" id="radio2" name="workout" value="flexibility">
         <label for="radio2">Flexibility</label>
 
-        <input type="radio" id="radio3" name="type" value="cardio">
+        <input type="radio" id="radio3" name="workout" value="cardio">
         <label for="radio3">Cardio</label>
     </div>
     <div class="btn-edit">
-        <button type='button' class="btn btn-primary" onclick="window.location.href='/profile'">Cancel Changes</button> 
+        <button type='button' class="btn-register" onclick="window.location.href='/profile'">Cancel Changes</button> 
     </div>
     <div class="btn-edit">
-        <button type='button' class="btn btn-primary" onclick="window.location.href='/profile'">Save Changes</button> 
+        <input type="submit" class='btn-register' value="Save Changes"></input> 
     </div>
+    </form>
 </div>
