@@ -6,9 +6,24 @@ $(document).ready(function() {
 	// Get height of viewport inner window and set CSS variable --vh
 	let vh = window.innerHeight * 0.01;
 	document.documentElement.style.setProperty('--vh', `${vh}px`);
-	
+	check();
 	navFill();
 })
+
+function check() {
+	const json = require('../../profile.json');
+	const obj = JSON.parse(json);
+
+	if(obj.workout == 'Weight'){
+	document.getElementById("radio1").checked = true;
+	}
+	else if(obj.workout == 'Flexibility'){
+		document.getElementById("radio2").checked = true;
+	}
+	else if(obj.workout == 'Cardio'){
+		document.getElementById("radio3").checked = true;
+	}
+}	
 
 /*
  * Function that is called when the document is ready.
