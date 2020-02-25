@@ -13,7 +13,6 @@ var errorHandler = require('errorhandler');
 var login = require('./routes/login');
 var index = require('./routes/index');
 var friends = require('./routes/friends');
-//var addfriend = require('./routes/addfriend');
 var profile = require('./routes/profile');
 var account = require('./routes/account');
 var settings = require('./routes/settings');

@@ -5,7 +5,7 @@
         </p>
     </div>
     <div class='account-photo'>
-        <img src={{imageURL}} width="150"; height:="150">
+        <img src={{imageURL}}>
     </div>
     <form role='form' method='get' action='/customize'>
     <div class="btn-edit">
@@ -15,7 +15,7 @@
     <div class='account-block'>
         Discoverable as a Mentor
         <label class="switch">
-            <input type="checkbox" name='discoverable'>
+            <input class="remember" type="checkbox" name='discoverable'>
             <span class="slider round"></span>
         </label>
     </div>
@@ -29,13 +29,13 @@
         {{/if}}
     <div class='account-workout'>
         <p class='account-workout-label'>Main Type of Workout:</p>
-        <input type="radio" id="radio1" name="workout" value="weight">
+        <input class="remember" type="radio" id="radio1" name="workout" value="weight">
         <label for="radio1">Weight</label>
 
-        <input type="radio" id="radio2" name="workout" value="flexibility">
+        <input class="remember" type="radio" id="radio2" name="workout" value="flexibility">
         <label for="radio2">Flexibility</label>
 
-        <input type="radio" id="radio3" name="workout" value="cardio">
+        <input class="remember" type="radio" id="radio3" name="workout" value="cardio">
         <label for="radio3">Cardio</label>
     </div>
     <div class="btn-edit">
