@@ -234,6 +234,20 @@ nav:hover {
     border-radius: 10px;
     background-color: var(--color-secondary);
     box-shadow: 2px 2px 6px 0px gray;
+    margin-bottom: 10px;
+}
+
+.btn-mentor-retry {
+    cursor: pointer;
+    display: inline-block;
+    align-self: center;
+    width: 150px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 2px solid var(--color-secondary);
+    box-shadow: 2px 2px 6px 0px gray;
+    box-sizing: border-box;
+    margin-bottom: 10px;
 }
 
 a.btn-mentor-pair-text {
@@ -350,7 +364,7 @@ svg.icon-forward {
     font-size: 14px;
     margin: 0 auto 10px auto; 
     padding: 10px;
-    width: 300px;
+    width: 330px;
     border-radius: 10px;
     background-color: var(--color-gray-light);
 }
