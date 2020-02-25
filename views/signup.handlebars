@@ -22,7 +22,7 @@
         <div class="form-wrapper">
             <p1 class="text">Sign Up</p>
             <form class='registerForm' role='form' method='get' action='/register'>
-                <div style="text-align:center">
+                <div style="input">
                     <label for="userName">Name:</label>
                     <br/>
                     <input type='text' id='name' name='name'></input>
@@ -30,24 +30,23 @@
                 <div class='input'>
                     <label>Email Address:</label>
                     <br/>
-                    <input>
+                    <input type='email' id='email' name='email'></input>
                 </div>
                 <div class='input'>
                     <label>Password:</label>
                     <br/>
-                    <input>
+                    <input type='password' id='password' name='password'></input>
                 </div>
-            </form>
             <br>
             <div>
-                <input type="submit" onclick="window.location.href='/register'" id="submitBtn" class="btn btn-default" value="Sign Up"></input>           
+                <input type="submit" id="submitBtn" class="btn btn-default" value="Sign Up"></input>           
             </div>
             <div>
                 <button class="button2">f</button>
             </div>
             <br>
+            </form>
             <div class="footer"><a href="/">Already an user? Sign In</a></div>
-            
         </div>
     </div>
     <script src='https://code.jquery.com/jquery.js'></script>

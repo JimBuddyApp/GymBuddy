@@ -20,6 +20,7 @@ var settings = require('./routes/settings');
 var mentormatch = require('./routes/mentormatch');
 var signup = require('./routes/signup');
 var edit = require('./routes/edit');
+var register = require('./routes/register.js');
 
 var app = express();
 
@@ -49,7 +50,7 @@ if ('development' == app.get('env')) {
 app.get('/', login.view);
 
 app.get('/signup', signup.view);
-app.get('/register', signup.register);
+app.get('/register', register.register);
 
 app.get('/main', index.view);
 app.get('/friends', friends.view);
