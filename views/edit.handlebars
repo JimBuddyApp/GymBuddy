@@ -19,14 +19,14 @@
             <span class="slider round"></span>
         </label>
     </div>
-        {{#if firstTime}}
+        {{#unless firstTime}}
         <div style="input">
             <label for="userName">Name:</label>
             <br/>
             <input type='text' id='name' name='name'></input>
         </div>
         <br>
-        {{/if}}
+        {{/unless}}
     <div class='account-workout'>
         <p class='account-workout-label'>Main Type of Workout:</p>
         <input type="radio" id="radio1" name="workout" value="weight">
