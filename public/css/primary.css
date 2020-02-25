@@ -370,13 +370,30 @@ svg.icon-forward {
 .account-photo-small img {
 }
 
+.account-workout {
+    align-items: center;
+    align-self: center;
+    padding: 15px;
+    border-radius: 40px;
+    border: 2px solid var(--color-secondary);
+    justify-content: center;
+}
+
 .account-workout input[type="radio"]
 {
     display: none;
 }
 
+.account-workout-label {
+    text-align: center;
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+}
+
 .account-workout label
 {
+    align-items: center;
+    justify-content: center;
     display: inline-block;
     border-radius: 40px;
     border: 1px solid var(--color-secondary);

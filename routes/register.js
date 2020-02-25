@@ -1,8 +1,6 @@
 var profile = require('../profile.json');
 
 exports.register = function(request, response){
-    console.log("register export used");
-    
 	name = request.query.name;
 	email = request.query.email;
 	password = request.query.password;
@@ -10,8 +8,8 @@ exports.register = function(request, response){
 		"name": name,
 		"email": email,
 		"password": password
-    };
+	};
 	console.log(user);
-	response.render('edit', user);
-    profile.profile.push(user);
+	profile.profile.push(user);
+	response.redirect('edit');
 }
