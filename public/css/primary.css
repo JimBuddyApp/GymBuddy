@@ -90,7 +90,6 @@ a.btn-person-font {
     background-color: var(--color-quinary);
     color: var(--color-font-light);
     text-align: center;
-    text-shadow: 1px 1px 1px black;
     height: 100%;
 }
 

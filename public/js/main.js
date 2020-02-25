@@ -92,7 +92,7 @@ function navFill() {
 		$('#i-home').css("fill", "#FFCD00");
 	} else if (window.location.pathname=='/friends') {
 		$('#i-star').css("fill", "#FFCD00");
-	} else if (window.location.pathname=='/profile') {
+	} else if (window.location.pathname=='/profile' || window.location.pathname=='/edit') {
 		$('#i-user').css("fill", "#FFCD00");
 	} else if (window.location.pathname=='/settings') {
 		$('#i-settings').css("fill", "#FFCD00");
