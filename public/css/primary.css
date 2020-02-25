@@ -60,6 +60,43 @@ a.btn-person-font {
 }
 
 /* Main Sections */
+.login-header {
+    margin: 5px auto 5px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.login-header-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+}
+
+.login-logo {
+    margin: 0;
+    padding: 0;
+}
+
+.login-title-a {
+    
+    text-shadow: 1px 1px 4px 5px black;
+    color: var(--color-secondary);
+    font-family: 'Bungee Inline', 'Open Sans', 'Helvetica', 'sans-serif';
+    margin: 0;
+    padding: 0;
+}
+
+.login-title-b {
+    
+    text-shadow: 1px 1px 4px 5px black;
+    color: var(--color-secondary);
+    font-family: 'Bungee Inline', 'Open Sans', 'Helvetica', 'sans-serif';
+    margin: 0;
+    padding: 0;
+}
+
 .main-home {
     display: flex;
     justify-content: center;
@@ -182,6 +219,7 @@ nav:hover {
 }
 
 .btn-mentor-pair {
+    cursor: pointer;
     display: inline-block;
     align-self: center;
     width: 150px;
@@ -354,6 +392,11 @@ svg.icon-forward {
     -webkit-shape-outside: circle(50% at 50% 50%);
 }
 
+.account-photo img {
+    width: 150px;
+    height: 150px;
+}
+
 .account-photo-small {
     height: 35px;
     width: 35px;
@@ -368,6 +411,8 @@ svg.icon-forward {
 }
 
 .account-photo-small img {
+    height: 35px;
+    width: 35px;
 }
 
 .account-workout {
