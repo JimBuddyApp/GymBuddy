@@ -4,6 +4,7 @@
   "description": "COGS120",
   "main": "app.js",
   "dependencies": {
+    "axios": "^0.19.2",
     "bootstrap-icons": "^1.0.0-alpha2",
     "cookie-parser": "^1.4.4",
     "errorhandler": "^1.5.1",
