@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/primary.css">
     <link rel="stylesheet" href="css/login.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bungee+Inline&display=swap" rel="stylesheet">   
     <script src="js/jquery-1.11.0.js"></script>
     {{>facebook}}
     <script src="/js/facebook.js"></script>
@@ -15,9 +16,12 @@
 </head>
 <body>
     <div class="wrapper viewport-height">
-        <div class='header'>
-            <img src="images/temporary-logo.png" alt="trident">
-            <h1 class="serif">jim buddy</h1>
+        <div class="login-header">
+            <div class="login-header-text">
+                <h1 class="login-title-a">GYM</h1>
+                <h1 class="login-title-b">BUDDY</h1>
+            </div>
+            <img class="login-logo" src="images/temporary-logo.png" alt="trident" height="125" width="125">
         </div>
         <div class="form-wrapper">
             <p1 class="text">Sign In</p>
@@ -37,7 +41,7 @@
             </form>
             <br>
             <div>
-                <button class="button1" onclick="window.location.href='/main'">LOG IN</button>           
+                <div class="btn-mentor-pair" onclick="window.location.href='/main'">LOG IN</div>           
             </div>
             <div>
                 <p class="facebookLogin" onclick="window.location.href='/main'">
@@ -49,7 +53,6 @@
             <br>
             <div class="footer"><a href="/signup">New? Sign up</a></div>
             <br>
-            <div class="footer"><a href="/main">Forget Password?</a></div>
         </div>
     </div> 
 </body>
