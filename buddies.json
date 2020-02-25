@@ -3,6 +3,7 @@
         {
             "isFriend": false,
             "userName": "sklemmer",
+            "isMentor": false,
             "mentorToggle": true,
             "name": "Scott Klemmer",
             "description": "HCI Prof",
@@ -12,6 +13,7 @@
         {
             "isFriend": false,
             "userName": "bobama",
+            "isMentor": false,
             "mentorToggle": false,
             "name": "Barack Obama",
             "description": "President guy",
@@ -21,6 +23,7 @@
         {
             "isFriend": false,
             "userName": "mjordan",
+            "isMentor": false,
             "mentorToggle": false,
             "name": "Michael Jordan",
             "description": "Basketball star",
@@ -30,6 +33,7 @@
         {
             "isFriend": false,
             "userName": "aroddick",
+            "isMentor": false,
             "mentorToggle": true,
             "name": "Austin Roddick",
             "description": "HCI student",
@@ -39,6 +43,7 @@
         {
             "isFriend": false,
             "userName": "sbaik",
+            "isMentor": false,
             "mentorToggle": true,
             "name": "Sam Baik",
             "description": "HCI student",
@@ -48,6 +53,7 @@
         {
             "isFriend": false,
             "userName": "jsmith",
+            "isMentor": false,
             "mentorToggle": false,
             "name": "John Smith",
             "description": "generic name",
@@ -57,6 +63,7 @@
         {
             "isFriend": false,
             "userName": "tdurden",
+            "isMentor": false,
             "mentorToggle": false,
             "name": "Tyler Durden",
             "description": "Fight Club",
@@ -66,6 +73,7 @@
         {
             "isFriend": false,
             "userName": "byonce",
+            "isMentor": false,
             "mentorToggle": false,
             "name": "Beyonce",
             "description": "Good Singer",
@@ -75,6 +83,7 @@
         {
             "isFriend": false,
             "userName": "mscott",
+            "isMentor": false,
             "mentorToggle": true,
             "name": "Michael Scott",
             "description": "#1 Boss",
@@ -84,6 +93,7 @@
         {
             "isFriend": false,
             "userName": "kharris",
+            "isMentor": false,
             "mentorToggle": false,
             "name": "Kyle Harris",
             "description": "HCI Student",
@@ -93,6 +103,7 @@
         {
             "isFriend": false,
             "userName": "dtrump",
+            "isMentor": false,
             "mentorToggle": true,
             "name": "Donald Trump",
             "description": "Biggest Hands Ever",
@@ -102,6 +113,7 @@
         {
             "isFriend": false,
             "userName": "djohnson",
+            "isMentor": false,
             "mentorToggle": true,
             "name": "Dwayne Johnson",
             "description": "The Rock",
@@ -111,6 +123,7 @@
         {
             "isFriend": false,
             "userName": "unicornboi",
+            "isMentor": false,
             "mentorToggle": true,
             "name": "Unicorn Steve",
             "description": "Only a few screws loose",

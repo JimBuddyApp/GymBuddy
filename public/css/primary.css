@@ -161,6 +161,13 @@ nav:hover {
     border-bottom: 1px solid var(--color-gray-light);
 }
 
+.mentor-indicator {
+    background-color: var(--color-secondary);
+    color: var(--color-font-light);
+    padding: 8px;
+    border-radius: 10px;
+}
+
 .btn-mentor {
     display: flex;
     justify-content: center;

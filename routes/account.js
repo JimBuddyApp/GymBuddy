@@ -12,7 +12,7 @@ exports.view = function(request, response){
 exports.addfriend = function (request, response){
     user["isFriend"] = true;
     friends.friends.push(user);
-	response.redirect(' friends');
+	response.redirect('friends');
 }
 
 function search(userName) {
