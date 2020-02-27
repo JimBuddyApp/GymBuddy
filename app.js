@@ -21,6 +21,7 @@ var signup = require('./routes/signup');
 var edit = require('./routes/edit');
 var register = require('./routes/register.js');
 var customize = require('./routes/customize');
+var viewAlt = require('./routes/index');
 
 var app = express();
 
@@ -53,6 +54,7 @@ app.get('/signup', signup.view);
 app.get('/register', register.register);
 app.get('/customize', customize.customize);
 app.get('/main', index.view);
+app.get('/viewAlt', index.viewAlt);
 app.get('/friends', friends.view);
 app.get('/profile', profile.view);
 app.get('/edit', edit.view);

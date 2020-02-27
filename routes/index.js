@@ -2,7 +2,9 @@ var buddies = require('../buddies.json');
 var available = search(buddies);
 
 exports.view = function(request, response){
-    console.log(available);
+    buddies['viewAlt'] = false;
+    console.log("available: " + available);
+    console.log()
     response.render('index', buddies);
 }
 
@@ -18,4 +20,9 @@ function search(buddies) {
     return result;
 }
 
+exports.viewAlt = function(request, response){
+    buddies['viewAlt'] = true;
+    console.log(buddies);
+    response.render('index', buddies);
+}
 /* NEED TO FIX THIS FILE: GET IT TO RENDER AVAILABLE INSTEAD OF BUDDIES */

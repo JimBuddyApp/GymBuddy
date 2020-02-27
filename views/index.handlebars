@@ -3,7 +3,19 @@
     <div class="btn-person header-mentor">
         <p class="header-font">Available Buddies</p>
     </div>
-
+    {{#if viewAlt}}
+        {{#each mentors}}
+            <div class="btn-person btn-person-click" onclick="window.location.href='/{{userName}}'">
+                <div class="account-photo-small">
+                    <img src={{imageURL}}>
+                </div>
+                <a href='#' class="btn-person-font">{{name}}</a>
+                <svg id="i-chevron-right" class="icon-forward" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="20" height="20" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                    <path d="M12 30 L24 16 12 2" />
+                </svg>
+            </div>  
+        {{/each}}
+    {{/if}}
     {{#each users}}
     {{#if isFriend}}
     {{else}}
@@ -19,30 +31,33 @@
     {{/if}}
     {{/each}}
 
-    <div class="btn-mentor btn-mentor-click">
-        <svg id="Capa_1" height="32" viewBox="0 0 512 512" width="32" fill="#fff" xmlns="http://www.w3.org/2000/svg"><g><path d="m497 406.003h-16v-45c0-8.284-6.716-15-15-15h-150c-24.508 0-46.305 11.818-60 30.052-13.695-18.234-35.492-30.052-60-30.052h-150c-8.284 0-15 6.716-15 15v45h-16c-8.284 0-15 6.716-15 15s6.716 15 15 15h141.785c30.529 0 54.438 6.765 71.062 20.107 16.337 13.112 39.794 13.253 56.305 0 16.625-13.342 40.534-20.107 71.063-20.107h141.785c8.284 0 15-6.716 15-15s-6.716-15-15-15zm-340.215 0h-95.785v-30h135c24.813 0 45 20.187 45 45v7.543c-21.493-14.949-49.767-22.543-84.215-22.543zm114.215 22.543v-7.543c0-24.813 20.187-45 45-45h135v30h-95.785c-34.447 0-62.722 7.594-84.215 22.543z"/><path d="m41.879 135.426 109.121 31.177v74.4c0 5.682 3.21 10.875 8.292 13.417l66.334 33.167c7.351 3.676 14.083 8.412 20.008 14.077 5.798 5.544 14.933 5.544 20.731 0 5.925-5.665 12.657-10.401 20.008-14.077l66.334-33.167c5.082-2.541 8.292-7.735 8.292-13.417v-74.4l30-8.571v112.971c0 8.284 6.716 15 15 15s15-6.716 15-15v-121.543l49.121-14.034c14.446-4.127 14.471-24.711 0-28.846l-210-60c-2.693-.77-5.548-.77-8.241 0l-210 60c-14.446 4.127-14.471 24.711 0 28.846zm289.121 96.306-58.043 29.021c-5.969 2.984-11.639 6.481-16.957 10.454-5.318-3.973-10.989-7.47-16.958-10.455l-58.042-29.02v-56.558l70.879 20.251c2.683.766 5.537.773 8.241 0l70.88-20.251zm-75-155.129 155.399 44.4-155.399 44.4-155.399-44.4z"/></g></svg>
-    </div>
-
-    <div class="btn-mentor-secondary">
-        <div class="main-mentors">
-            <br>
-            <br>
-            <h1>Feeling lost?</h1>
-            <p>Instantly pair with a mentor.</p>
-            <br>
-            <div class="btn-mentor-pair">
-                <a href="/mentormatch" class="btn-mentor-pair-text">Get Mentor</a>
-            </div>
-            <br>
-            <br>
-
+    {{#if viewAlt}}
+    {{else}}
+        <div class="btn-mentor btn-mentor-click">
+            <svg id="Capa_1" height="32" viewBox="0 0 512 512" width="32" fill="#fff" xmlns="http://www.w3.org/2000/svg"><g><path d="m497 406.003h-16v-45c0-8.284-6.716-15-15-15h-150c-24.508 0-46.305 11.818-60 30.052-13.695-18.234-35.492-30.052-60-30.052h-150c-8.284 0-15 6.716-15 15v45h-16c-8.284 0-15 6.716-15 15s6.716 15 15 15h141.785c30.529 0 54.438 6.765 71.062 20.107 16.337 13.112 39.794 13.253 56.305 0 16.625-13.342 40.534-20.107 71.063-20.107h141.785c8.284 0 15-6.716 15-15s-6.716-15-15-15zm-340.215 0h-95.785v-30h135c24.813 0 45 20.187 45 45v7.543c-21.493-14.949-49.767-22.543-84.215-22.543zm114.215 22.543v-7.543c0-24.813 20.187-45 45-45h135v30h-95.785c-34.447 0-62.722 7.594-84.215 22.543z"/><path d="m41.879 135.426 109.121 31.177v74.4c0 5.682 3.21 10.875 8.292 13.417l66.334 33.167c7.351 3.676 14.083 8.412 20.008 14.077 5.798 5.544 14.933 5.544 20.731 0 5.925-5.665 12.657-10.401 20.008-14.077l66.334-33.167c5.082-2.541 8.292-7.735 8.292-13.417v-74.4l30-8.571v112.971c0 8.284 6.716 15 15 15s15-6.716 15-15v-121.543l49.121-14.034c14.446-4.127 14.471-24.711 0-28.846l-210-60c-2.693-.77-5.548-.77-8.241 0l-210 60c-14.446 4.127-14.471 24.711 0 28.846zm289.121 96.306-58.043 29.021c-5.969 2.984-11.639 6.481-16.957 10.454-5.318-3.973-10.989-7.47-16.958-10.455l-58.042-29.02v-56.558l70.879 20.251c2.683.766 5.537.773 8.241 0l70.88-20.251zm-75-155.129 155.399 44.4-155.399 44.4-155.399-44.4z"/></g></svg>
         </div>
-    </div>
 
-    <div class="btn-mentor-close">
-        <svg id="i-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3">
-            <path d="M2 30 L30 2 M30 30 L2 2" />
-        </svg>
-    </div>
+        <div class="btn-mentor-secondary">
+            <div class="main-mentors">
+                <br>
+                <br>
+                <h1>Feeling lost?</h1>
+                <p>Instantly pair with a mentor.</p>
+                <br>
+                <div class="btn-mentor-pair">
+                    <a href="/mentormatch" class="btn-mentor-pair-text">Get Mentor</a>
+                </div>
+                <br>
+                <br>
+
+            </div>
+        </div>
+
+        <div class="btn-mentor-close">
+            <svg id="i-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3">
+                <path d="M2 30 L30 2 M30 30 L2 2" />
+            </svg>
+        </div>
+    {{/if}}
 
 </div>
