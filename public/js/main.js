@@ -11,21 +11,6 @@ $(document).ready(function() {
 	//check();
 })
 
-/** 
-function check() {
-	var result = JSON.parse(profile)
-		if(result.workout == 'Weight'){
-		document.getElementById("radio1").checked = true;
-		}
-		else if(result.workout == 'Flexibility'){
-			document.getElementById("radio2").checked = true;
-		}
-		else if(result.workout == 'Cardio'){
-			document.getElementById("radio3").checked = true;
-		}
-}	
-*/
-
 /*
  * Function that is called when the document is ready.
  */
@@ -36,6 +21,13 @@ function initializePage() {
 	$('.btn-mentor-click').click(mentorAnimate);
 	$('.btn-mentor-close').click(mentorClose);
 	$(".btn-logout-click").click(logOut);
+	$('#sort-buddies').click(sortBuddies);
+}
+
+function sortBuddies(e) {
+	e.preventDefault();
+	$(this).css("color", "red");
+	
 }
 
 function logOut(e) {
