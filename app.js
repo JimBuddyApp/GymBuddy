@@ -21,7 +21,6 @@ var signup = require('./routes/signup');
 var edit = require('./routes/edit');
 var register = require('./routes/register.js');
 var customize = require('./routes/customize');
-var viewAlt = require('./routes/index');
 
 var app = express();
 
@@ -61,6 +60,7 @@ app.get('/edit', edit.view);
 app.get('/settings', settings.view);
 app.get('/mentormatch', mentormatch.view);
 app.get('/addfriend', account.addfriend);
+app.get('/removefriend', account.removefriend);
 app.get('/:userName', account.view);   
 
 

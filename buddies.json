@@ -8,7 +8,8 @@
             "name": "Scott Klemmer",
             "description": "HCI Prof",
             "imageURL": "images/stock/scottk.jpg",
-            "workout": "CROSSFIT"
+            "workout": "CROSSFIT",
+            "contact": "0008675309"
         },
         {
             "isFriend": false,
@@ -18,7 +19,8 @@
             "name": "Barack Obama",
             "description": "President guy",
             "imageURL": "images/stock/obama.jpg",
-            "workout": "POWERLIFTING"
+            "workout": "POWERLIFTING",
+            "contact": "0000000000"
         },
         {
             "isFriend": false,
@@ -28,7 +30,8 @@
             "name": "Michael Jordan",
             "description": "Basketball star",
             "imageURL": "images/stock/mjordan.jpg",
-            "workout": "CROSSFIT"
+            "workout": "CROSSFIT",
+            "contact": "0000000000"
         },
         {
             "isFriend": false,
@@ -38,7 +41,8 @@
             "name": "Austin Roddick",
             "description": "HCI student",
             "imageURL": "images/stock/austin.jpg",
-            "workout": "POWERLIFTING"
+            "workout": "POWERLIFTING",
+            "contact": "0000000000"
         },
         {
             "isFriend": false,
@@ -48,7 +52,8 @@
             "name": "Sam Baik",
             "description": "HCI student",
             "imageURL": "images/stock/pikachu.jpg",
-            "workout": "CROSSFIT"
+            "workout": "CROSSFIT",
+            "contact": "0000000000"
         },
         {
             "isFriend": false,
@@ -58,7 +63,8 @@
             "name": "John Smith",
             "description": "generic name",
             "imageURL": "images/stock/dp.jpg",
-            "workout": "CROSSFIT"
+            "workout": "CROSSFIT",
+            "contact": "0000000000"
         },
         {
             "isFriend": false,
@@ -68,7 +74,8 @@
             "name": "Tyler Durden",
             "description": "Fight Club",
             "imageURL": "images/stock/durden.jpg",
-            "workout": "CROSSFIT"
+            "workout": "CROSSFIT",
+            "contact": "0000000000"
         },
         {
             "isFriend": false,
@@ -78,7 +85,8 @@
             "name": "Beyonce",
             "description": "Good Singer",
             "imageURL": "images/stock/beyonce.jpg",
-            "workout": "CARDIO"
+            "workout": "CARDIO",
+            "contact": "0000000000"
         },
         {
             "isFriend": false,
@@ -88,7 +96,8 @@
             "name": "Michael Scott",
             "description": "#1 Boss",
             "imageURL": "images/stock/mscott.jpg",
-            "workout": "CARDIO"
+            "workout": "CARDIO",
+            "contact": "0000000000"
         },
         {
             "isFriend": false,
@@ -98,7 +107,8 @@
             "name": "Kyle Harris",
             "description": "HCI Student",
             "imageURL": "images/stock/pikachu.jpg",
-            "workout": "POWERLIFTING"
+            "workout": "POWERLIFTING",
+            "contact": "0000000000"
         },
         {
             "isFriend": false,
@@ -108,7 +118,8 @@
             "name": "Donald Trump",
             "description": "Biggest Hands Ever",
             "imageURL": "images/stock/trump.jpg",
-            "workout": "CARDIO"
+            "workout": "CARDIO",
+            "contact": "0000000000"
         },
         {
             "isFriend": false,
@@ -118,7 +129,8 @@
             "name": "Dwayne Johnson",
             "description": "The Rock",
             "imageURL": "images/stock/rock.jpg",
-            "workout": "POWERLIFTING"
+            "workout": "POWERLIFTING",
+            "contact": "0000000000"
         },
         {
             "isFriend": false,
@@ -128,7 +140,8 @@
             "name": "Unicorn Steve",
             "description": "Only a few screws loose",
             "imageURL": "images/stock/unicorn.jpg",
-            "workout": "CARDIO"
+            "workout": "CARDIO",
+            "contact": "0000000000"
         }
     ]
 }

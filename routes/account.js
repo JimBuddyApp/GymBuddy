@@ -12,7 +12,18 @@ exports.view = function(request, response){
 exports.addfriend = function (request, response){
     user["isFriend"] = true;
     friends.friends.push(user);
-	response.redirect('friends');
+	response.render('account', user);
+}
+
+exports.removefriend = function(request, response){
+    user["isFriend"] = false;
+    for (var i = 0; i < friends.friends.length; i++) {
+        if (friends.friends[i].userName == user.userName) {
+            friends.friends.splice(i, 1);
+            break;
+        }
+    }
+    response.render('account', user);
 }
 
 function search(userName) {

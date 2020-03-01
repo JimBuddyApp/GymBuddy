@@ -4,6 +4,8 @@
         <p class="header-font">Available Mentors</p>
     </div>
     {{#each users}}
+        {{#if isFriend}}
+        {{else}}
         {{#if mentorToggle}}
         <div class="btn-person btn-person-click" onclick="window.location.href='/{{userName}}'">
             <div class="account-photo-small">
@@ -16,6 +18,7 @@
         </div> 
         <div class="divider"></div>
         {{/if}} 
+        {{/if}}
     {{/each}}
     <div class="header-mentor">
         <p class="header-font">Available Buddies</p>

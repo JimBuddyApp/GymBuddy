@@ -35,9 +35,22 @@
             {{workout}}
         </div>
     </div>
+
+    {{#if isFriend}}
+    <div class="account-block">
+        <div class="account-block-text">
+            Contact Info:
+        </div>
+        <div class="account-block-contact">
+            <a href="sms:{{contact}}">{{contact}}</a>
+        </div>
+    </div>
+    {{/if}}
     <br>
     {{#if isFriend}}
-    <div></div>
+    <div class="add-friend-btn" onclick="window.location.href='/removefriend'">
+        REMOVE FRIEND
+    </div>
     {{else}}
     <div class="add-friend-btn" id="submitBtn" onclick="window.location.href='/addfriend'">
         ADD FRIEND
