@@ -13,20 +13,30 @@
     </head>
     <body>
         <div class='wrapper viewport-height'>
+            {{#if viewAlt}}
             <div class="main-home">
-                <img class="logo" src='/images/temporary-logo.png'>
+                <img class="logo" src='/images/temporary-logo.png' onclick="window.location.href='/viewAlt'">
             </div>
-        
+            {{else}}
+            <div class="main-home">
+                <img class="logo" src='/images/temporary-logo.png' onclick="window.location.href='/main'">
+            </div>
+            {{/if}}
             <div class="main-middle">
             {{{ body }}}
             </div>
 
 
             <nav class="tab navbar fixed-bottom navbar-light bg-light">
+                {{#if viewAlt}}
+                <svg id="i-home" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="#FFCD00" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" onclick="window.location.href='/viewAlt'">
+                    <path d="M12 20 L12 30 4 30 4 12 16 2 28 12 28 30 20 30 20 20 Z" />
+                </svg>
+                {{else}}
                 <svg id="i-home" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="#FFCD00" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" onclick="window.location.href='/main'">
                     <path d="M12 20 L12 30 4 30 4 12 16 2 28 12 28 30 20 30 20 20 Z" />
                 </svg>
-
+                {{/if}}
                 <svg id="i-star" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="#FFCD00" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" onclick="window.location.href='/friends'">
                     <path d="M16 2 L20 12 30 12 22 19 25 30 16 23 7 30 10 19 2 12 12 12 Z" />
                 </svg>

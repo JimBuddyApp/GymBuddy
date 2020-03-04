@@ -27,15 +27,15 @@ function initializePage() {
 
 function sortBuddies(e) {
 	e.preventDefault();
-	$('#sort-mentors').css("color", "grey");
-	$('#sort-buddies').css("color", "red");
+	$('#sort-mentors').css("color", "white");
+	$('#sort-buddies').css("color", "#006A96");
 	$('#sort').load('sortBuddies');
 }
 
 function sortMentors(e) {
 	e.preventDefault();
-	$('#sort-buddies').css("color", "grey");
-	$('#sort-mentors').css("color", "red");
+	$('#sort-buddies').css("color", "white");
+	$('#sort-mentors').css("color", "#006A96");
 	$('#sort').load('sortMentors');
 }
 

@@ -1,8 +1,12 @@
 <div class="main-scroll">
     <div class="header-mentor">
+        {{#if viewAlt}}
+        <p class="header-font">Available Buddies</p>
+        {{else}}
         <p class="header-font">Available...</p>
         <a id="sort-mentors" class="header-font" href="#">Mentors</a>
         <a id="sort-buddies" class="header-font" href="#">Buddies</a>
+        {{/if}}
     </div>
     <div id="sort">
     {{#each users}}
@@ -23,11 +27,10 @@
         {{/if}}
     {{/each}}
     
-
+    {{#if viewAlt}}
     <div class="btn-mentor btn-mentor-click">
-        Help
+        Pair
     </div>
-
     <div class="btn-mentor-secondary">
         <div class="main-mentors">
             <br>
@@ -49,5 +52,28 @@
             <path d="M2 30 L30 2 M30 30 L2 2" />
         </svg>
     </div>
+    {{else}}
+    <div class="btn-mentor btn-mentor-click">
+        Help
+    </div>
+    <div class="btn-mentor-secondary">
+        <div class="main-mentors">
+            <br>
+            <br>
+            <h1>Feeling lost at the Gym? Use Gym Buddy!</h1>
+            <p>Navigate through the Available Mentors and Available Buddies tabs to connect with others!</p>
+            <br>
+            <br>
+            <br>
+
+        </div>
+    </div>
+
+    <div class="btn-mentor-close">
+        <svg id="i-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="#747678" stroke-linecap="round" stroke-linejoin="round" stroke-width="3">
+            <path d="M2 30 L30 2 M30 30 L2 2" />
+        </svg>
+    </div>
+    {{/if}}
     </div>
 </div>

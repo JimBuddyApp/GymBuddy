@@ -163,7 +163,10 @@ a.btn-person-font {
 }
 
 #sort-mentors {
-    color: red;
+    color: #006A96;
+}
+#sort-buddies {
+    color: white;
 }
 
 nav {
@@ -566,7 +569,7 @@ svg.icon-forward {
     text-transform: uppercase;
     letter-spacing: .5px;
     font-weight: bolder;
-    color: var(--color-font-light);
+    color: grey;
 }
 
 a.header-font-mentor {
