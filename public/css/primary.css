@@ -162,6 +162,10 @@ a.btn-person-font {
     text-align: center;
 }
 
+#sort-mentors {
+    color: red;
+}
+
 nav {
     background-color: var(--color-primary);
     height: calc(var(--vh, 1vh) * 100 * 0.1);

@@ -27,10 +27,10 @@ exports.viewAlt = function(request, response){
 }
 
 exports.viewSortMentors = function(request, response){
-    response.render('sortMentors', {layout: 'loginset.handlebars', buddies: buddies.users});
+    response.render('sortMentors', {layout: 'tabs.handlebars', buddies: buddies.users});
 }
 
 exports.viewSortBuddies = function(request, response){
-    response.render('sortBuddies', {layout: 'loginset.handlebars', buddies: buddies.users});
+    response.render('sortBuddies', {layout: 'tabs.handlebars', buddies: buddies.users});
 }
 /* NEED TO FIX THIS FILE: GET IT TO RENDER AVAILABLE INSTEAD OF BUDDIES */
