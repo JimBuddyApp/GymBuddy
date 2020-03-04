@@ -25,4 +25,12 @@ exports.viewAlt = function(request, response){
     console.log(buddies);
     response.render('index', buddies);
 }
+
+exports.viewSortMentors = function(request, response){
+    response.render('sortMentors', {layout: 'loginset.handlebars', buddies: buddies.users});
+}
+
+exports.viewSortBuddies = function(request, response){
+    response.render('sortBuddies', {layout: 'loginset.handlebars', buddies: buddies.users});
+}
 /* NEED TO FIX THIS FILE: GET IT TO RENDER AVAILABLE INSTEAD OF BUDDIES */

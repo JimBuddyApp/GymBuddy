@@ -54,6 +54,8 @@ app.get('/register', register.register);
 app.get('/customize', customize.customize);
 app.get('/main', index.view);
 app.get('/viewAlt', index.viewAlt);
+app.get('/sortMentors', index.viewSortMentors);
+app.get('/sortBuddies', index.viewSortBuddies);
 app.get('/friends', friends.view);
 app.get('/profile', profile.view);
 app.get('/edit', edit.view);
