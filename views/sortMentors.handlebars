@@ -1,11 +1,7 @@
 <div class="main-scroll">
-    <div class="header-mentor">
-        <p class="header-font">Available...</p>
-        <a id="sort-mentors" class="header-font" href="#">Mentors</a>
-        <a id="sort-buddies" class="header-font" href="#">Buddies</a>
-    </div>
     <div id="sort">
-    {{#each users}}
+    <!-- buddies tab -->
+    {{#each buddies}}
         {{#if mentorToggle}}
         <div class="btn-person btn-person-click" onclick="window.location.href='/{{userName}}'">
             <div class="account-photo-small">
@@ -15,12 +11,11 @@
             <svg id="i-chevron-right" class="icon-forward" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="20" height="20" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
                 <path d="M12 30 L24 16 12 2" />
             </svg>
-        </div> 
+        </div>
         <div class="divider"></div>
-        {{/if}} 
+        {{/if}}
     {{/each}}
     
-
     <div class="btn-mentor btn-mentor-click">
         Help
     </div>

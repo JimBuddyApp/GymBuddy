@@ -55,14 +55,15 @@ app.get('/register', register.register);
 app.get('/customize', customize.customize);
 app.get('/main', index.view);
 app.get('/viewAlt', index.viewAlt);
+app.get('/sortMentors', index.viewSortMentors);
+app.get('/sortBuddies', index.viewSortBuddies);
 app.get('/friends', friends.view);
 app.get('/profile', profile.view);
 app.get('/edit', edit.view);
 app.get('/settings', settings.view);
 app.get('/mentormatch', mentormatch.view);
 app.get('/addfriend', account.addfriend);
-app.get('/:userName', account.view);   
-
+app.get('/:userName', account.view);  
 
 app.use(express.static(path.join(__dirname, 'public')));
 http.createServer(app).listen(app.get('port'), function(){

@@ -22,12 +22,21 @@ function initializePage() {
 	$('.btn-mentor-close').click(mentorClose);
 	$(".btn-logout-click").click(logOut);
 	$('#sort-buddies').click(sortBuddies);
+	$('#sort-mentors').click(sortMentors);
 }
 
 function sortBuddies(e) {
 	e.preventDefault();
-	$(this).css("color", "red");
-	
+	$('#sort-mentors').css("color", "grey");
+	$('#sort-buddies').css("color", "red");
+	$('#sort').load('sortBuddies');
+}
+
+function sortMentors(e) {
+	e.preventDefault();
+	$('#sort-buddies').css("color", "grey");
+	$('#sort-mentors').css("color", "red");
+	$('#sort').load('sortMentors');
 }
 
 function logOut(e) {
