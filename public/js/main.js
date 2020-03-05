@@ -10,6 +10,10 @@ $(document).ready(function() {
 	navFill();
 	//check();
 })
+$(document).on({
+	ajaxStart: function() { $('.main-scroll').addClass("loading");    },
+	ajaxStop: function() { $('.main-scroll').removeClass("loading"); }    
+});
 
 /*
  * Function that is called when the document is ready.
@@ -23,6 +27,7 @@ function initializePage() {
 	$(".btn-logout-click").click(logOut);
 	$('#sort-buddies').click(sortBuddies);
 	$('#sort-mentors').click(sortMentors);
+
 }
 
 function sortBuddies(e) {
