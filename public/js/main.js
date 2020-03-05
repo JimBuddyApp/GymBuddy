@@ -16,7 +16,6 @@ $(document).ready(function() {
  */
 function initializePage() {
 	console.log("Javascript connected!");
-	dataClear();
 	//initRegister();
 	$(".btn-person-click").click(personClick);
 	$('.btn-mentor-click').click(mentorAnimate);
@@ -24,10 +23,6 @@ function initializePage() {
 	$(".btn-logout-click").click(logOut);
 	$('#sort-buddies').click(sortBuddies);
 	$('#sort-mentors').click(sortMentors);
-}
-
-function dataClear() {
-	
 }
 
 function sortBuddies(e) {

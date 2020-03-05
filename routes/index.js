@@ -4,7 +4,6 @@ var available = search(buddies);
 exports.view = function(request, response){
     buddies['viewAlt'] = false;
     console.log("available: " + available);
-    console.log()
     response.render('index', buddies);
 }
 

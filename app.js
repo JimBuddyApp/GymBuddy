@@ -48,7 +48,6 @@ if ('development' == app.get('env')) {
 
 // Add routes here
 app.get('/', login.view);
-
 app.get('/signup', signup.view);
 app.get('/register', register.register);
 app.get('/customize', customize.customize);
