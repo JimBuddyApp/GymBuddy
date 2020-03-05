@@ -12,6 +12,7 @@ exports.view = function(request, response){
 exports.addfriend = function (request, response){
     user["isFriend"] = true;
     friends.friends.push(user);
+    console.log("friends.json contents: " + friends.friends);
 	response.render('account', user);
 }
 
