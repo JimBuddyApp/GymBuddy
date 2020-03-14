@@ -10,29 +10,36 @@
     <div class="btn-edit">
         <form action="/uploadProfilePicture"    
             enctype="multipart/form-data" method="POST"> 
-        <span>Upload Profile Picture:</span>   
-        <input type="file" name="mypic" required/> <br> 
-        <input type="submit" value="submit">  
+        <span>Upload Profile Picture:</span>
+        <input type="file" name="mypic"/> <br> 
+        <input type="submit" value="Submit">  
         </form> 
     </div>
     <br>
     <form role='form' method='get' action='/customize'>
     <div class='account-block'>
         Discoverable as a Mentor
+        {{#if mentorToggle}}
+        <label class="switch">
+            <input type="checkbox" name='discoverable' checked>
+            <span class="slider round"></span>
+        </label>
+        {{else}}
         <label class="switch">
             <input type="checkbox" name='discoverable'>
             <span class="slider round"></span>
         </label>
+        {{/if}}
     </div>
         {{#unless firstTime}}
-        <div style="input">
-            <label for="userName">Name:</label>
-            <br/>
-            <input type='text' id='name' name='name'></input>
+        <div class="form__field">
+            <label for="signup__username"><svg class="icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#user"></use></svg><span class="hidden">Username</span></label>
+            <input id="signup__username" type="text" name="username" class="form__input" placeholder="Change Username">
         </div>
         <br>
         {{/unless}}
     <div class='account-workout'>
+        <div class='btn-edit'>
         <p class='account-workout-label'>Main Type of Workout:</p>
         <input type="radio" id="radio1" name="workout" value="Weight">
         <label for="radio1">Weight</label>
@@ -42,10 +49,13 @@
 
         <input type="radio" id="radio3" name="workout" value="Cardio">
         <label for="radio3">Cardio</label>
+        </div>
     </div>
+    {{#unless firstTime}}
     <div class="btn-edit">
         <button type='button' class="btn-register" onclick="window.location.href='/profile'">Cancel Changes</button> 
     </div>
+    {{/unless}}
     <div class="btn-edit">
         <input type="submit" class='btn-register' value="Save Changes"></input> 
     </div>

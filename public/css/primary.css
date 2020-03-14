@@ -359,6 +359,7 @@ svg.icon-forward {
     margin-bottom: 10px;
     justify-content: center;
     display: flex;
+    text-align: center;
 }
 
 /* Account */
