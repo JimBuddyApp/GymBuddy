@@ -354,6 +354,10 @@ svg.icon-forward {
     background-color: white;
 }
 
+.account-wrapper {
+    margin-bottom: 10px;
+}
+
 .btn-edit{
     margin-top: 5px;
     margin-bottom: 10px;
