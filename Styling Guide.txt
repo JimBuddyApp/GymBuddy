@@ -1,3 +1,0 @@
-Bytesize Icons: https://github.com/danklammer/bytesize-icons
-Color Palette: https://ucpa.ucsd.edu/brand/elements/color-palette/
-Use Bootstrap components for Header, Buttons, Footer, Navbar, etc.

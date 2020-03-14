@@ -8,9 +8,15 @@
         <img src={{imageURL}}>
     </div>
     <form role='form' method='get' action='/customize'>
-    <div class="btn-edit">
-        <button type='button' class="btn btn-primary" onclick="window.location.href='/edit'">Change Profile Photo</button> 
-    </div>
+        <form method="POST" action="/upload-profile-pic" enctype="multipart/form-data">
+            <div class="btn-edit">
+                <label>Select Profile Picture:</label>
+                <input type='file' name='file' class="btn btn-primary"></input>
+            </div>
+            <div class="btn-edit">
+                <input type='submit' value='Upload' class="btn btn-primary"></input> 
+            </div>
+        </form>
     <br>
     <div class='account-block'>
         Discoverable as a Mentor
