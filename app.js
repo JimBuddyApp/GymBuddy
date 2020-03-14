@@ -25,7 +25,7 @@ var customize = require('./routes/customize');
 var app = express();
 
 // All environments
-app.set('port', process.env.PORT || 3000);
+const port = process.env.PORT || 3000;
 
 // View engine
 app.set('views', path.join(__dirname, 'views'));

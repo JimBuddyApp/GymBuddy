@@ -3,7 +3,7 @@ var profile = require('../profile.json');
 exports.customize = function(request, response){
 	mentorToggle = request.query.discoverable;
 	workout = request.query.workout;
-    image = "images/stock/dp.jpg";
+    image = request.params.id;
     
     profile.mentorToggle = mentorToggle;
     profile.workout = workout;
