@@ -48,36 +48,6 @@ function sortMentors(e) {
 	$('#sort').load('sortMentors');
 }
 
-/** 
-function changeTab(e) {
-	e.preventDefault();
-
-	// Get the div ID, e.g., "tab2"
-	var tabID = $(this).closest('.tab').attr('id');
-	// get rid of 'project' from the front of the id 'tab2'
-	var idNumber = tabID.substr('tab'.length);
-
-	console.log("User clicked on tab " + idNumber);
-	var url = 'http://localhost:3000/'
-	var url2 = //heroku app link
-	$.get(url + "tab/" + idNumber, callBackFn)
-	console.log("URL called: " + "http://localhost:3000/tab/" + idNumber);
-}
-
-function callBackFn(result) {
-	console.log("Callback Function called!");
-	console.log(result);
-	console.log(result['image']);
-
-	var projectHTML = 
-		'<p>' + result['title'] + '</p>' +
-		'<p><small>' + result['date'] + '</small></p>' +
-		'<img src="' + result['image'] + '" class="detailImage">' +
-		'<p>' + result['summary'] + '</p>';
-	$("#project" + result.id + ' .details').html(projectHTML);
-}
-**/
-
 function logOut(e) {
 	e.preventDefault();
 	$(this).css("background-color", "#e8e8e8");
