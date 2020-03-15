@@ -453,6 +453,8 @@ svg.icon-forward {
 }
 
 .account-photo {
+    text-align: center;
+    display: block;
     align-self: center;
     margin-top: 20px;
     height: 150px;
